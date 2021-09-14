@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://example.org/</link>
+    <link>https://chihpindu.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:27:40 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 00:27:40 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>條碼掃描</title>
-      <link>http://example.org/2021/09/%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F/</link>
+      <link>https://chihpindu.github.io/2021/09/%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F/</link>
       <pubDate>Tue, 14 Sep 2021 00:27:40 +0800</pubDate>
       
-      <guid>http://example.org/2021/09/%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F/</guid>
+      <guid>https://chihpindu.github.io/2021/09/%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F/</guid>
       <description>更新中…</description>
     </item>
     
     <item>
       <title>隱私權政策</title>
-      <link>http://example.org/hidden/privacy/</link>
+      <link>https://chihpindu.github.io/hidden/privacy/</link>
       <pubDate>Tue, 14 Sep 2021 00:17:36 +0800</pubDate>
       
-      <guid>http://example.org/hidden/privacy/</guid>
+      <guid>https://chihpindu.github.io/hidden/privacy/</guid>
       <description>非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：
 一、隱私權保護政策的適用範圍
 隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。
@@ -53,19 +53,19 @@
     
     <item>
       <title>My Drafts</title>
-      <link>http://example.org/drafts/my-drafts/</link>
+      <link>https://chihpindu.github.io/drafts/my-drafts/</link>
       <pubDate>Sun, 12 Sep 2021 00:14:09 +0800</pubDate>
       
-      <guid>http://example.org/drafts/my-drafts/</guid>
+      <guid>https://chihpindu.github.io/drafts/my-drafts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>關於貓咖啡工作室</title>
-      <link>http://example.org/hidden/about/</link>
+      <link>https://chihpindu.github.io/hidden/about/</link>
       <pubDate>Sat, 11 Sep 2021 00:38:07 +0800</pubDate>
       
-      <guid>http://example.org/hidden/about/</guid>
+      <guid>https://chihpindu.github.io/hidden/about/</guid>
       <description></description>
     </item>
     

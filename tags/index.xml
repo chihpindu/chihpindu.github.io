@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>http://example.org/tags/</link>
+    <link>https://chihpindu.github.io/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:27:40 +0800</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 00:27:40 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>flutter</title>
-      <link>http://example.org/tags/flutter/</link>
+      <link>https://chihpindu.github.io/tags/flutter/</link>
       <pubDate>Tue, 14 Sep 2021 00:27:40 +0800</pubDate>
       
-      <guid>http://example.org/tags/flutter/</guid>
+      <guid>https://chihpindu.github.io/tags/flutter/</guid>
       <description></description>
     </item>
     
