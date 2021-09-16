@@ -4,10 +4,13 @@
     
     <script type="application/ld+json">
 
-{  
-  "@context":"http://schema.org",
-  "@type":"Website",
-  "@id":"https:\/\/chihpindu.github.io\/",
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "[Flutter] 條碼掃描-前言",
+  
+  "datePublished": "2021-09-14T00:27:40+08:00",
+  "dateModified": "2021-09-14T00:27:40+08:00",
   "author": {
     "@type": "Person",
     "name": "chihpindu",
@@ -15,10 +18,22 @@
     "image": "https://www.gravatar.com/avatar/a80929bcbe7bea76f70c4410d6b81876"
     
   },
-  "name":"貓咖啡工作室",
-  "description":"技術研究、程式筆記...",
-  "url":"https:\/\/chihpindu.github.io\/tags\/",
-  "keywords":"[]"
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/chihpindu.github.io\/2021\/09\/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "貓咖啡工作室",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/a80929bcbe7bea76f70c4410d6b81876"
+    }
+    
+  },
+  "description": "Flutter實作的App，簡單的練習專案…\n",
+  "keywords": []
 }
 
 </script>
@@ -28,19 +43,33 @@
 <meta name="generator" content="Hugo 0.85.0 with theme Tranquilpeak 0.5.2-BETA">
 <meta name="author" content="chihpindu">
 <meta name="keywords" content="">
-<meta name="description" content="技術研究、程式筆記...">
+<meta name="description" content="Flutter實作的App，簡單的練習專案…">
 
 
-<meta property="og:description" content="技術研究、程式筆記...">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tags">
-<meta name="twitter:title" content="Tags">
-<meta property="og:url" content="https://chihpindu.github.io/tags/">
-<meta property="twitter:url" content="https://chihpindu.github.io/tags/">
+<meta property="og:description" content="Flutter實作的App，簡單的練習專案…">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Flutter] 條碼掃描-前言">
+<meta name="twitter:title" content="[Flutter] 條碼掃描-前言">
+<meta property="og:url" content="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="技術研究、程式筆記...">
-<meta name="twitter:description" content="技術研究、程式筆記...">
+<meta property="og:description" content="Flutter實作的App，簡單的練習專案…">
+<meta name="twitter:description" content="Flutter實作的App，簡單的練習專案…">
 <meta property="og:locale" content="zh-tw">
+
+  
+    <meta property="article:published_time" content="2021-09-14T00:27:40">
+  
+  
+    <meta property="article:modified_time" content="2021-09-14T00:27:40">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="flutter">
+    
+  
 
 
 <meta name="twitter:card" content="summary">
@@ -59,16 +88,14 @@
 
 
 
-    <title>Tags</title>
+    <title>[Flutter] 條碼掃描-前言</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://chihpindu.github.io/tags/index.xml">
-    
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/tags/">
+    <link rel="canonical" href="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -232,52 +259,126 @@
         class="
                hasCoverMetaIn
                ">
-
-        <div id="tags-archives" class="main-content-wrap">
-          <form id="filter-form" action="#">
-            <input name="tag" type="text" class="form-control input--xlarge" placeholder="搜尋標籤" autofocus="autofocus">
-          </form>
-          <h4 class="archive-result text-color-base text-xlarge"
-              data-message-zero="沒有找到標籤"
-              data-message-one="找到 1 個標籤"
-              data-message-other="找到 {n} 個標籤"></h4>
-
-            <section>
-              
-                <a class="tag tag--primary tag--small" href="#flutter-list" data-tag="flutter">
-                  flutter
-                </a>
-              
-            </section>
-            <section class="boxes">
-              
-                <div id="flutter-list" class="archive box" data-tag="flutter">
-                  <h4 class="archive-title">
-                    <a class="link-unstyled" href="flutter">
-                      flutter (1)
-                    </a>
-                  </h4>
-                  <ul class="archive-posts">
-                    
-                      <li class="archive-post">
-                        <a class="archive-post-title" href="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/">
-                          [Flutter] 條碼掃描-前言
-                        </a>
-                        <span class="archive-post-date"> - 
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      [Flutter] 條碼掃描-前言
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2021-09-14T00:27:40&#43;08:00">
+        
   
   
   
   
     2021年09月14日 00:27:40
   
-</span>
-                      </li>
-                    
-                  </ul>
-                </div>
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>Flutter實作的App，簡單的練習專案…</p>
+<p>一直以來都在尋找開發容易，又可雙平台的APP實作方案，嘗試過Cordova、ReactNative，以及Flutter，最終選擇以Fluttr來做為APP的實作方案。</p>
+<p>簡單說下優缺點，Cordova主要就是以APP框架，內嵌一個WebView的方式來實作App，開發的方式就是html、javascript、jQuery…等，對於前端工程師來說是個再簡單不過的方案，不需要另外學習程式語言，就可以直接進入APP的大門，但缺點其實也是致命傷「效能差」（也是文章中所提到效能最差的一個），會接觸這個主要是工作上需要，不過也是Cordova讓我進入App的世界。</p>
+<p>ReactNative，是一個Facebook開發的架構，所以實際上效能不會太差（甚至可媲美原生app，端看設計者的功力），所使用的語言是JavaScript，對於前端工程師也是個不陌生的語言，如果會寫ReactJS，基本上就如同它官網上所述「Learn Once, Write Anywhere」，學會了React，就可以應用到各個平台。</p>
+<p>Flutter，是Google所開發維護，使用的語言是Dart，對於第一次接觸的我感到陌生，也是進入Flutter後才知道有這個程式語言，而學習上我分為兩個階段，先學簡單的Dart語言，再實際進入Flutter。</p>
+<p>對於身為全端工程師，照理說應該是選擇ReactNative開發才對，怎麼會選擇Flutter呢？
+其實在進入Flutter前，我確實也有買書，先看React.js，再看ReactNative，但進入學習開發的時候，常常莫名其秒的出現錯誤畫面，常發生於升級ReactNative後，或是今天開發正常，明天開發異常，就暫時擱置不再研究（挫折感太大），</p>
+<p>而目前學習、研究、簡單開發Flutter後，上述的問題都沒有遇過，所以就一直用到現在，雖然只有短短的二、三個月，不過開發體驗還不錯，如果沒什麼意外，就會一直鑽研下去吧。</p>
               
-           </section>
-         </div>
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">標籤</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/flutter/">flutter</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個文章">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="移至最上方">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2021 chihpindu. All Rights Reserved
@@ -285,7 +386,89 @@
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="2">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個文章">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="移至最上方">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="2">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2021%2F09%2Fflutter-%25E6%25A2%259D%25E7%25A2%25BC%25E6%258E%2583%25E6%258F%258F-%25E5%2589%258D%25E8%25A8%2580%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2021%2F09%2Fflutter-%25E6%25A2%259D%25E7%25A2%25BC%25E6%258E%2583%25E6%258F%258F-%25E5%2589%258D%25E8%25A8%2580%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
     </div>
+    
     <div id="about">
   <div id="about-card">
     <div id="about-btn-close">
@@ -316,6 +499,8 @@
 </div>
 
     
+
+    
   
     
       <div id="cover" style="background-image:url('https://chihpindu.github.io/images/cover.jpg');"></div>
@@ -323,8 +508,7 @@
   
 
 
-  </body>
-  
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -391,4 +575,7 @@ $(document).ready(function() {
 
 
 
+    
+  </body>
 </html>
+
