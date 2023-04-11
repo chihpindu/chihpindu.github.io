@@ -13,12 +13,11 @@
       <pubDate>Fri, 01 Oct 2021 11:29:08 +0800</pubDate>
       
       <guid>https://chihpindu.github.io/hiddens/hugocommand/</guid>
-      <description>建立新專案  hugo new site 專案名稱
- 新建文章  hugo new posts/文章名稱.md
- 啟動localhost（不包含草稿）  hugo server
- 啟動localhost（包含草稿）  hugo server -D
- 打包Hugo Site，可加入參數「-D」決定是否打包草稿。  hugo
- </description>
+      <description>建立新專案 hugo new site 專案名稱
+新建文章 hugo new posts/文章名稱.md
+啟動localhost（不包含草稿） hugo server
+啟動localhost（包含草稿） hugo server -D
+打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo</description>
     </item>
     
     <item>
@@ -37,6 +36,15 @@
       
       <guid>https://chihpindu.github.io/hiddens/privacy/</guid>
       <description>&lt;p&gt;非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Drafts</title>
+      <link>https://chihpindu.github.io/drafts/my-drafts/</link>
+      <pubDate>Sun, 12 Sep 2021 00:14:09 +0800</pubDate>
+      
+      <guid>https://chihpindu.github.io/drafts/my-drafts/</guid>
+      <description></description>
     </item>
     
     <item>
