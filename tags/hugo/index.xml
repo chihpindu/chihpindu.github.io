@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 貓咖啡工作室</title>
+    <link>https://chihpindu.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on 貓咖啡工作室</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 01 Oct 2021 11:29:08 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Hugo] 常用指令</title>
+      <link>https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Fri, 01 Oct 2021 11:29:08 +0800</pubDate>
+      
+      <guid>https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>建立新專案 hugo new site 專案名稱
+新建文章 hugo new posts/文章名稱.md
+啟動localhost（不包含草稿） hugo server
+啟動localhost（包含草稿） hugo server -D
+打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo</description>
+    </item>
+    
+  </channel>
+</rss>

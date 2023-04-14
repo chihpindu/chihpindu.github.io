@@ -4,10 +4,13 @@
     
     <script type="application/ld+json">
 
-{  
-  "@context":"http://schema.org",
-  "@type":"Website",
-  "@id":"https:\/\/chihpindu.github.io\/",
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "[Hugo] 常用指令",
+  
+  "datePublished": "2021-10-01T11:29:08+08:00",
+  "dateModified": "2021-10-01T11:29:08+08:00",
   "author": {
     "@type": "Person",
     "name": "貓咖啡工作室",
@@ -15,10 +18,22 @@
     "image": "https://chihpindu.github.io/images/profile.png"
     
   },
-  "name":"貓咖啡工作室",
-  "description":"\u003cp\u003e非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：\u003c\/p\u003e",
-  "url":"https:\/\/chihpindu.github.io\/hiddens\/privacy\/",
-  "keywords":"[]"
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/chihpindu.github.io\/2021\/10\/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "貓咖啡工作室",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chihpindu.github.io/images/profile.png"
+    }
+    
+  },
+  "description": "建立新專案 hugo new site 專案名稱\n新建文章 hugo new posts/文章名稱.md\n啟動localhost（不包含草稿） hugo server\n啟動localhost（包含草稿） hugo server -D\n打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo",
+  "keywords": []
 }
 
 </script>
@@ -28,28 +43,48 @@
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：">
+<meta name="description" content="建立新專案 hugo new site 專案名稱
+新建文章 hugo new posts/文章名稱.md
+啟動localhost（不包含草稿） hugo server
+啟動localhost（包含草稿） hugo server -D
+打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo">
 
 
-<meta property="og:description" content="非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：">
+<meta property="og:description" content="建立新專案 hugo new site 專案名稱
+新建文章 hugo new posts/文章名稱.md
+啟動localhost（不包含草稿） hugo server
+啟動localhost（包含草稿） hugo server -D
+打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="隱私權政策">
-<meta name="twitter:title" content="隱私權政策">
-<meta property="og:url" content="https://chihpindu.github.io/hiddens/privacy/">
-<meta property="twitter:url" content="https://chihpindu.github.io/hiddens/privacy/">
+<meta property="og:title" content="[Hugo] 常用指令">
+<meta name="twitter:title" content="[Hugo] 常用指令">
+<meta property="og:url" content="https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：">
-<meta name="twitter:description" content="非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：">
+<meta property="og:description" content="建立新專案 hugo new site 專案名稱
+新建文章 hugo new posts/文章名稱.md
+啟動localhost（不包含草稿） hugo server
+啟動localhost（包含草稿） hugo server -D
+打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo">
+<meta name="twitter:description" content="建立新專案 hugo new site 專案名稱
+新建文章 hugo new posts/文章名稱.md
+啟動localhost（不包含草稿） hugo server
+啟動localhost（包含草稿） hugo server -D
+打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo">
 <meta property="og:locale" content="zh-tw">
 
   
-    <meta property="article:published_time" content="2021-09-14T00:17:36">
+    <meta property="article:published_time" content="2021-10-01T11:29:08">
   
   
-    <meta property="article:modified_time" content="2021-09-14T00:17:36">
+    <meta property="article:modified_time" content="2021-10-01T11:29:08">
   
   
   
+  
+    
+      <meta property="article:tag" content="hugo">
+    
   
 
 
@@ -69,14 +104,14 @@
 
 
 
-    <title>隱私權政策</title>
+    <title>[Hugo] 常用指令</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/hiddens/privacy/">
+    <link rel="canonical" href="https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -236,19 +271,19 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      隱私權政策
+      [Hugo] 常用指令
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2021-09-14T00:17:36&#43;08:00">
+      <time datetime="2021-10-01T11:29:08&#43;08:00">
         
   
   
   
   
-    2021年09月14日 00:17:36
+    2021年10月01日 11:29:08
   
 
       </time>
@@ -260,65 +295,27 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>非常歡迎您光臨「貓咖啡工作室」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：</p>
-<p>一、隱私權保護政策的適用範圍</p>
-<p>隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。</p>
-<p>二、個人資料的蒐集、處理及利用方式</p>
-<ol>
-<li>
-<p>當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。</p>
-</li>
-<li>
-<p>本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。</p>
-</li>
-<li>
-<p>於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，決不對外公佈。</p>
-</li>
-<li>
-<p>為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。</p>
-</li>
-</ol>
-<p>三、資料之保護</p>
-<ol>
-<li>
-<p>本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。</p>
-</li>
-<li>
-<p>如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。</p>
-</li>
-</ol>
-<p>四、網站對外的相關連結</p>
-<p>本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。</p>
-<p>五、與第三人共用個人資料之政策</p>
-<p>本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。</p>
-<p>前項但書之情形包括不限於：</p>
-<ol>
-<li>
-<p>經由您書面同意。</p>
-</li>
-<li>
-<p>法律明文規定。</p>
-</li>
-<li>
-<p>為免除您生命、身體、自由或財產上之危險。</p>
-</li>
-<li>
-<p>與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集者依其揭露方式無從識別特定之當事人。</p>
-</li>
-<li>
-<p>當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。</p>
-</li>
-<li>
-<p>有利於您的權益。</p>
-</li>
-<li>
-<p>本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。</p>
-</li>
-</ol>
-<p>六、Cookie之使用</p>
-<p>為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的Cookie，若您不願接受Cookie的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕Cookie的寫入，但可能會導致網站某些功能無法正常執行 。</p>
-<p>七、隱私權保護政策之修正</p>
-<p>本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。</p>
+              <h5 id="建立新專案">建立新專案</h5>
+<blockquote>
+<p>hugo new site 專案名稱</p>
+</blockquote>
+<h5 id="新建文章">新建文章</h5>
+<blockquote>
+<p>hugo new posts/文章名稱.md</p>
+</blockquote>
+<h5 id="啟動localhost不包含草稿">啟動localhost（不包含草稿）</h5>
+<blockquote>
+<p>hugo server</p>
+</blockquote>
+<h5 id="啟動localhost包含草稿">啟動localhost（包含草稿）</h5>
+<blockquote>
+<p>hugo server -D</p>
+</blockquote>
+<h5 id="打包hugo-site可加入參數-d決定是否打包草稿">打包Hugo Site，可加入參數「-D」決定是否打包草稿。</h5>
+<blockquote>
+<p>hugo</p>
+</blockquote>
+
               
 
 
@@ -326,6 +323,16 @@
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">標籤</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/hugo/">hugo</a>
+
+                  </div>
+                
               
             
             
@@ -335,7 +342,7 @@
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--disabled">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" data-tooltip="[自架伺服器] MP510-50 楓葉板" aria-label="下一篇: [自架伺服器] MP510-50 楓葉板">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -343,7 +350,7 @@
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/hiddens/about/" data-tooltip="關於貓咖啡工作室" aria-label="上一篇: 關於貓咖啡工作室">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" data-tooltip="[Flutter] 條碼掃描-前言" aria-label="上一篇: [Flutter] 條碼掃描-前言">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -361,13 +368,13 @@
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/hiddens/privacy/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/hiddens/privacy/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -406,7 +413,7 @@
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--disabled">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" data-tooltip="[自架伺服器] MP510-50 楓葉板" aria-label="下一篇: [自架伺服器] MP510-50 楓葉板">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -414,7 +421,7 @@
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/hiddens/about/" data-tooltip="關於貓咖啡工作室" aria-label="上一篇: 關於貓咖啡工作室">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" data-tooltip="[Flutter] 條碼掃描-前言" aria-label="上一篇: [Flutter] 條碼掃描-前言">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -432,13 +439,13 @@
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/hiddens/privacy/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/hiddens/privacy/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -463,13 +470,13 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2Fhiddens%2Fprivacy%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2021%2F10%2Fhugo-%25E5%25B8%25B8%25E7%2594%25A8%25E6%258C%2587%25E4%25BB%25A4%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2Fhiddens%2Fprivacy%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2021%2F10%2Fhugo-%25E5%25B8%25B8%25E7%2594%25A8%25E6%258C%2587%25E4%25BB%25A4%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>
