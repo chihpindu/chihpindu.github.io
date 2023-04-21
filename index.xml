@@ -6,44 +6,67 @@
     <description>Recent content on 貓咖啡工作室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 14 Apr 2023 15:36:14 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2023 23:47:21 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mp51050</title>
-      <link>https://chihpindu.github.io/2023/04/mp51050/</link>
-      <pubDate>Fri, 14 Apr 2023 15:36:14 +0800</pubDate>
+      <title>[Hugo] 為什麼使用hugo來架設網站</title>
+      <link>https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/</link>
+      <pubDate>Sat, 15 Apr 2023 23:47:21 +0800</pubDate>
       
-      <guid>https://chihpindu.github.io/2023/04/mp51050/</guid>
-      <description>&lt;p&gt;一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&amp;hellip;&lt;/p&gt;</description>
+      <guid>https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/</guid>
+      <description>&lt;p&gt;使用過很多Blog服務，為什麼會選擇使用hugo來架設網站？因為：文章是屬於我自己。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[自架伺服器] 基礎防火牆設定 使用ufw</title>
+      <link>https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/</link>
+      <pubDate>Thu, 16 Jun 2022 23:39:47 +0800</pubDate>
+      
+      <guid>https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/</guid>
+      <description>&lt;p&gt;防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[NodeJs] 台灣彩券最新開獎號碼</title>
-      <link>https://chihpindu.github.io/2023/04/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/</link>
-      <pubDate>Thu, 13 Apr 2023 00:40:07 +0800</pubDate>
+      <link>https://chihpindu.github.io/2022/06/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/</link>
+      <pubDate>Sun, 12 Jun 2022 00:40:07 +0800</pubDate>
       
-      <guid>https://chihpindu.github.io/2023/04/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/</guid>
+      <guid>https://chihpindu.github.io/2022/06/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/</guid>
       <description>&lt;p&gt;本篇文章說明如何使用Node.js爬蟲，用來取得台灣彩券的開獎號碼&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Hugo 指令</title>
-      <link>https://chihpindu.github.io/hiddens/hugocommand/</link>
-      <pubDate>Fri, 01 Oct 2021 11:29:08 +0800</pubDate>
+      <title>[自架伺服器] 關閉圖形化介面</title>
+      <link>https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E9%97%9C%E9%96%89%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2/</link>
+      <pubDate>Sat, 16 Apr 2022 23:37:29 +0800</pubDate>
       
-      <guid>https://chihpindu.github.io/hiddens/hugocommand/</guid>
-      <description>建立新專案 hugo new site 專案名稱
-新建文章 hugo new posts/文章名稱.md
-啟動localhost（不包含草稿） hugo server
-啟動localhost（包含草稿） hugo server -D
-打包Hugo Site，可加入參數「-D」決定是否打包草稿。 hugo</description>
+      <guid>https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E9%97%9C%E9%96%89%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2/</guid>
+      <description>&lt;p&gt;如果機器是用來做網頁伺服器、檔案伺服器…等，而不是日常個人電腦使用，可以考慮把預設的圖形化介面關閉&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>[Flutter] 條碼掃描-前言</title>
-      <link>https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/</link>
+      <title>[自架伺服器] MP510-50 楓葉板</title>
+      <link>https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/</link>
+      <pubDate>Mon, 11 Apr 2022 15:36:14 +0800</pubDate>
+      
+      <guid>https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/</guid>
+      <description>&lt;p&gt;一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Hugo] 常用指令</title>
+      <link>https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Fri, 01 Oct 2021 11:29:08 +0800</pubDate>
+      
+      <guid>https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>&lt;p&gt;使用hugo建立靜態網頁常用方法&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Flutter] 條碼掃描</title>
+      <link>https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F/</link>
       <pubDate>Tue, 14 Sep 2021 00:27:40 +0800</pubDate>
       
-      <guid>https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/</guid>
+      <guid>https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F/</guid>
       <description>&lt;p&gt;Flutter實作的App，簡單的練習專案…&lt;/p&gt;</description>
     </item>
     

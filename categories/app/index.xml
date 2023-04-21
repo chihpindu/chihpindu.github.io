@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>flutter on 貓咖啡工作室</title>
-    <link>https://chihpindu.github.io/tags/flutter/</link>
-    <description>Recent content in flutter on 貓咖啡工作室</description>
+    <title>APP on 貓咖啡工作室</title>
+    <link>https://chihpindu.github.io/categories/app/</link>
+    <description>Recent content in APP on 貓咖啡工作室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 14 Sep 2021 00:27:40 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 00:27:40 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/categories/app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Flutter] 條碼掃描</title>
       <link>https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F/</link>
