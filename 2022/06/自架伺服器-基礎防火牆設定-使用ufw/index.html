@@ -7,10 +7,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "[Flutter] 條碼掃描-前言",
+  "headline": "[自架伺服器] 基礎防火牆設定 使用ufw",
   
-  "datePublished": "2021-09-14T00:27:40+08:00",
-  "dateModified": "2021-09-14T00:27:40+08:00",
+  "datePublished": "2022-06-16T23:39:47+08:00",
+  "dateModified": "2022-06-16T23:39:47+08:00",
   "author": {
     "@type": "Person",
     "name": "貓咖啡工作室",
@@ -20,7 +20,7 @@
   },
   "mainEntityOfPage": { 
     "@type": "WebPage",
-    "@id": "https:\/\/chihpindu.github.io\/2021\/09\/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80\/" 
+    "@id": "https:\/\/chihpindu.github.io\/2022\/06\/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw\/" 
   },
   "publisher": {
     "@type": "Organization",
@@ -32,7 +32,7 @@
     }
     
   },
-  "description": "Flutter實作的App，簡單的練習專案…\n",
+  "description": "防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。\n",
   "keywords": []
 }
 
@@ -43,35 +43,37 @@
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="Flutter實作的App，簡單的練習專案…">
+<meta name="description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
 
 
-<meta property="og:description" content="Flutter實作的App，簡單的練習專案…">
+<meta property="og:description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Flutter] 條碼掃描-前言">
-<meta name="twitter:title" content="[Flutter] 條碼掃描-前言">
-<meta property="og:url" content="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/">
-<meta property="twitter:url" content="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/">
+<meta property="og:title" content="[自架伺服器] 基礎防火牆設定 使用ufw">
+<meta name="twitter:title" content="[自架伺服器] 基礎防火牆設定 使用ufw">
+<meta property="og:url" content="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="Flutter實作的App，簡單的練習專案…">
-<meta name="twitter:description" content="Flutter實作的App，簡單的練習專案…">
+<meta property="og:description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
+<meta name="twitter:description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
 <meta property="og:locale" content="zh-tw">
 
   
-    <meta property="article:published_time" content="2021-09-14T00:27:40">
+    <meta property="article:published_time" content="2022-06-16T23:39:47">
   
   
-    <meta property="article:modified_time" content="2021-09-14T00:27:40">
+    <meta property="article:modified_time" content="2022-06-16T23:39:47">
   
-  
-  
-    
-      <meta property="article:section" content="條碼掃描">
-    
   
   
     
-      <meta property="article:tag" content="flutter">
+      <meta property="article:section" content="自架伺服器">
+    
+  
+  
+    
+      <meta property="article:tag" content="Linux">
+    
+      <meta property="article:tag" content="Server">
     
   
 
@@ -92,14 +94,14 @@
 
 
 
-    <title>[Flutter] 條碼掃描-前言</title>
+    <title>[自架伺服器] 基礎防火牆設定 使用ufw</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/">
+    <link rel="canonical" href="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -270,19 +272,19 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      [Flutter] 條碼掃描-前言
+      [自架伺服器] 基礎防火牆設定 使用ufw
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2021-09-14T00:27:40&#43;08:00">
+      <time datetime="2022-06-16T23:39:47&#43;08:00">
         
   
   
   
   
-    2021年09月14日 00:27:40
+    2022年06月16日 23:39:47
   
 
       </time>
@@ -292,7 +294,7 @@ if (!doNotTrack) {
   
     <span>分類</span>
     
-      <a class="category-link" href="https://chihpindu.github.io/categories/%e6%a2%9d%e7%a2%bc%e6%8e%83%e6%8f%8f">條碼掃描</a>
+      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
     
   
 
@@ -302,17 +304,32 @@ if (!doNotTrack) {
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>Flutter實作的App，簡單的練習專案…</p>
-<p>一直以來都在尋找開發容易，又可雙平台的APP實作方案，嘗試過Cordova、ReactNative，以及Flutter，最終選擇以Fluttr來做為APP的實作方案。</p>
-<p>簡單說下優缺點，Cordova主要就是以APP框架，內嵌一個WebView的方式來實作App，開發的方式就是html、javascript、jQuery…等，對於前端工程師來說是個再簡單不過的方案，不需要另外學習程式語言，就可以直接進入APP的大門，但缺點其實也是致命傷「效能差」（也是文章中所提到效能最差的一個），會接觸這個主要是工作上需要，不過也是Cordova讓我進入App的世界。</p>
-<p>ReactNative，是一個Facebook開發的架構，所以實際上效能不會太差（甚至可媲美原生app，端看設計者的功力），所使用的語言是JavaScript，對於前端工程師也是個不陌生的語言，如果會寫ReactJS，基本上就如同它官網上所述「Learn Once, Write Anywhere」，學會了React，就可以應用到各個平台。</p>
-<p>Flutter，是Google所開發維護，使用的語言是Dart，對於第一次接觸的我感到陌生，也是進入Flutter後才知道有這個程式語言，而學習上我分為兩個階段，先學簡單的Dart語言，再實際進入Flutter。</p>
-<p>對於身為全端工程師，照理說應該是選擇ReactNative開發才對，怎麼會選擇Flutter呢？
-其實在進入Flutter前，我確實也有買書，先看React.js，再看ReactNative，但進入學習開發的時候，常常莫名其秒的出現錯誤畫面，常發生於升級ReactNative後，或是今天開發正常，明天開發異常，就暫時擱置不再研究（挫折感太大），</p>
-<p>而目前學習、研究、簡單開發Flutter後，上述的問題都沒有遇過，所以就一直用到現在，雖然只有短短的二、三個月，不過開發體驗還不錯，如果沒什麼意外，就會一直鑽研下去吧。</p>
-<p>Flutter學習部份，也是買了一本書來鑽研，不過看玩書本後，總覺得與實務上有所差異，所以又在Udemy平台買了一門課程（Flutter 程式設計入門實戰 30 天 – Android 與 iOS App 應用程式開發攻略），花費幾個月的時間看完整個課程，也在上課中一併撰寫條碼掃描的app（QRCode條碼掃描真的是一個很好入門的題目），後來也正式在Google Play 商店上架，iOS App Store未上架，原因是…年費對於初學者來說實在太貴，不過也有使用開發者帳號進行iPhone的實機驗證。</p>
-<p>實際去實作一個功能性app，並且確實執行上架，我對於flutter的評價還不錯，是個可以入門、進階研究的項目，但是對於網頁全端工程師來說，如果真的可以學一套軟體，實際應用上工作、私人專案的話，就再好不過了，所以後續app的研究實作上，還是會回到ReactNative，至於什麼時候開啟專案，目前仍沒有時間表，就慢慢前進了。</p>
-<p>Google Play 商店：<a href="https://play.google.com/store/apps/details?id=miomiocoffee.barcodescanner&amp;pli=1">條碼掃描</a></p>
+              <p>防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。</p>
+<p>搜尋「Linux」「防火牆」，大部份可以找到的資料不是ufw，就是iptables，而又會有加註說明一般入門、初學者使用ufw，進階人員使用iptables。因為ufw真的太容易了，所以這邊我就使用ufw來建置我伺服器上的防火牆。</p>
+<p>先來一張我的伺服器防火牆設置狀態，以及如何查看目前的狀態。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#顯示防火牆狀態</span>
+</span></span><span style="display:flex;"><span>sudo ufw status
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#顯示防火牆狀態，並且標記次序</span>
+</span></span><span style="display:flex;"><span>sudo ufw status numbered
+</span></span></code></pre></div><p><img src="https://i0.wp.com/blog.chihpindu.com/wp-content/uploads/2022/06/%E6%88%AA%E5%9C%96-2022-06-16-00.43.02.png?w=500&amp;ssl=1" alt="防火牆設定">
+防火牆設定</p>
+<p>上圖中顯示埠號的啟用狀態，相關設定與說明如下所述：</p>
+<p>埠號3389，此為遠端桌面連線所使用的埠號，可能看到這個項目有一個很不一樣的設定「來自 192.168.1.0/24」，這邊指的是3389這個埠號，只能由IP位址為192.168.1.XXX的裝置連入，意即只有在區網內的電腦，才可以利用遠端桌面的方式連接到此機器，設置的指令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#指定來源IP</span>
+</span></span><span style="display:flex;"><span>sudo ufw allow from 192.168.1.0/24 to any port <span style="color:#ae81ff">3389</span>
+</span></span></code></pre></div><p>接下來埠號22、80、443，分別為ssh、http、https，如果裝置為網頁伺服器，一般都會啟用http、https這兩個埠號，而會啟用22這個埠號，主要原因是伺服器並非日常使用的電腦，所以平常都會把圖形化關閉，讓伺服器只執行在文字模式，可以降低CPU、RAM的負擔，但是總不可能每次要調整伺服器就只能跑到伺服器前，開啟螢幕並且設定（一般情況下，伺服器都會拔掉所有IO裝置，使用遠端的方式設定），所以這個時候就會開啟22這個埠號，讓管理人員可以遠端設定，這個部份也可以與3389一樣設定只允許內網設定（安全性較佳），不過如果啟用為Anywhere的話，其實會彈性很多，可能剛好人不在機器旁，但又需要做設定，或是重啟機器，這個時候就可以由外網連線，設置的指令如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#新增Anywhere的規則</span>
+</span></span><span style="display:flex;"><span>sudo ufw allow <span style="color:#ae81ff">22</span>
+</span></span></code></pre></div><p>但是，如果２２大開的話，可能會有安全性問題，所以這個部份可以為機器加入「兩階段認證」，不過這個功能非本篇的重點，所以不會加以說明，有興趣的可以搜尋「Linux + 兩階段認證」，設定的方式不難，不過多多少少可以增加伺服器的安全性。</p>
+<p>接下來說明其他常用的指令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#刪除規則（num代入查詢status　numbered的數值）</span>
+</span></span><span style="display:flex;"><span>sudo ufw delete num
+</span></span></code></pre></div><p>條件都設定完畢後，其實可以查看iptables的內容，使用指令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#查詢iptables規則</span>
+</span></span><span style="display:flex;"><span>sudo iptables -l
+</span></span></code></pre></div><p>其實有提供很多資訊，不過目前先列出上述使用ufw建立的規則，意即使用ufw設定規則，一樣會把這些規則加入到iptables，但是我們可以使用比較親民簡單的ufw達成。</p>
+<p><img src="https://i0.wp.com/blog.chihpindu.com/wp-content/uploads/2022/06/%E6%88%AA%E5%9C%96-2022-06-16-01.06.46.png?w=691&amp;ssl=1" alt="iptables"></p>
               
 
 
@@ -326,7 +343,9 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">標籤</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/flutter/">flutter</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/linux/">Linux</a>
+
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/server/">Server</a>
 
                   </div>
                 
@@ -339,7 +358,7 @@ if (!doNotTrack) {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" data-tooltip="[Hugo] 常用指令" aria-label="下一篇: [Hugo] 常用指令">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" data-tooltip="[Hugo] 為何使用hugo來架設網站" aria-label="下一篇: [Hugo] 為何使用hugo來架設網站">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -347,7 +366,7 @@ if (!doNotTrack) {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--disabled">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/06/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/" data-tooltip="[NodeJs] 台灣彩券最新開獎號碼" aria-label="上一篇: [NodeJs] 台灣彩券最新開獎號碼">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -365,13 +384,13 @@ if (!doNotTrack) {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -410,7 +429,7 @@ if (!doNotTrack) {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" data-tooltip="[Hugo] 常用指令" aria-label="下一篇: [Hugo] 常用指令">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BD%95%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" data-tooltip="[Hugo] 為何使用hugo來架設網站" aria-label="下一篇: [Hugo] 為何使用hugo來架設網站">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -418,7 +437,7 @@ if (!doNotTrack) {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--disabled">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/06/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/" data-tooltip="[NodeJs] 台灣彩券最新開獎號碼" aria-label="上一篇: [NodeJs] 台灣彩券最新開獎號碼">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -436,13 +455,13 @@ if (!doNotTrack) {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2021/09/flutter-%E6%A2%9D%E7%A2%BC%E6%8E%83%E6%8F%8F-%E5%89%8D%E8%A8%80/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -467,13 +486,13 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2021%2F09%2Fflutter-%25E6%25A2%259D%25E7%25A2%25BC%25E6%258E%2583%25E6%258F%258F-%25E5%2589%258D%25E8%25A8%2580%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2022%2F06%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-%25E5%259F%25BA%25E7%25A4%258E%25E9%2598%25B2%25E7%2581%25AB%25E7%2589%2586%25E8%25A8%25AD%25E5%25AE%259A-%25E4%25BD%25BF%25E7%2594%25A8ufw%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2021%2F09%2Fflutter-%25E6%25A2%259D%25E7%25A2%25BC%25E6%258E%2583%25E6%258F%258F-%25E5%2589%258D%25E8%25A8%2580%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2022%2F06%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-%25E5%259F%25BA%25E7%25A4%258E%25E9%2598%25B2%25E7%2581%25AB%25E7%2589%2586%25E8%25A8%25AD%25E5%25AE%259A-%25E4%25BD%25BF%25E7%2594%25A8ufw%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>
