@@ -7,10 +7,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "[自架伺服器] 基礎防火牆設定 使用ufw",
+  "headline": "[Hugo] 為什麼使用hugo來架設網站？",
   
-  "datePublished": "2022-06-16T23:39:47+08:00",
-  "dateModified": "2022-06-16T23:39:47+08:00",
+  "datePublished": "2023-04-15T23:47:21+08:00",
+  "dateModified": "2023-04-15T23:47:21+08:00",
   "author": {
     "@type": "Person",
     "name": "貓咖啡工作室",
@@ -20,7 +20,7 @@
   },
   "mainEntityOfPage": { 
     "@type": "WebPage",
-    "@id": "https:\/\/chihpindu.github.io\/2022\/06\/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw\/" 
+    "@id": "https:\/\/chihpindu.github.io\/2023\/04\/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99\/" 
   },
   "publisher": {
     "@type": "Organization",
@@ -32,7 +32,7 @@
     }
     
   },
-  "description": "防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。\n",
+  "description": "使用過很多Blog服務，為什麼會選擇使用hugo來架設網站？因為：文章是屬於我自己。\n",
   "keywords": []
 }
 
@@ -43,37 +43,31 @@
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
+<meta name="description" content="使用過很多Blog服務，為什麼會選擇使用hugo來架設網站？因為：文章是屬於我自己。">
 
 
-<meta property="og:description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
+<meta property="og:description" content="使用過很多Blog服務，為什麼會選擇使用hugo來架設網站？因為：文章是屬於我自己。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[自架伺服器] 基礎防火牆設定 使用ufw">
-<meta name="twitter:title" content="[自架伺服器] 基礎防火牆設定 使用ufw">
-<meta property="og:url" content="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/">
-<meta property="twitter:url" content="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/">
+<meta property="og:title" content="[Hugo] 為什麼使用hugo來架設網站？">
+<meta name="twitter:title" content="[Hugo] 為什麼使用hugo來架設網站？">
+<meta property="og:url" content="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
-<meta name="twitter:description" content="防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。">
+<meta property="og:description" content="使用過很多Blog服務，為什麼會選擇使用hugo來架設網站？因為：文章是屬於我自己。">
+<meta name="twitter:description" content="使用過很多Blog服務，為什麼會選擇使用hugo來架設網站？因為：文章是屬於我自己。">
 <meta property="og:locale" content="zh-tw">
 
   
-    <meta property="article:published_time" content="2022-06-16T23:39:47">
+    <meta property="article:published_time" content="2023-04-15T23:47:21">
   
   
-    <meta property="article:modified_time" content="2022-06-16T23:39:47">
+    <meta property="article:modified_time" content="2023-04-15T23:47:21">
   
   
-  
-    
-      <meta property="article:section" content="自架伺服器">
-    
   
   
     
-      <meta property="article:tag" content="Linux">
-    
-      <meta property="article:tag" content="Server">
+      <meta property="article:tag" content="hugo">
     
   
 
@@ -94,14 +88,14 @@
 
 
 
-    <title>[自架伺服器] 基礎防火牆設定 使用ufw</title>
+    <title>[Hugo] 為什麼使用hugo來架設網站？</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/">
+    <link rel="canonical" href="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -272,64 +266,40 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      [自架伺服器] 基礎防火牆設定 使用ufw
+      [Hugo] 為什麼使用hugo來架設網站？
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2022-06-16T23:39:47&#43;08:00">
+      <time datetime="2023-04-15T23:47:21&#43;08:00">
         
   
   
   
   
-    2022年06月16日 23:39:47
+    2023年04月15日 23:47:21
   
 
       </time>
     
     
-  
-  
-    <span>分類</span>
-    
-      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
-    
-  
-
   </div>
 
 </div>
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>防火牆的設置對於伺服器，或是一般個人使用的電腦都是很重要的一環，避免電腦埠號沒有管理，為駭客、有心人士提供入侵裝置的大門。</p>
-<p>搜尋「Linux」「防火牆」，大部份可以找到的資料不是ufw，就是iptables，而又會有加註說明一般入門、初學者使用ufw，進階人員使用iptables。因為ufw真的太容易了，所以這邊我就使用ufw來建置我伺服器上的防火牆。</p>
-<p>先來一張我的伺服器防火牆設置狀態，以及如何查看目前的狀態。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#顯示防火牆狀態</span>
-</span></span><span style="display:flex;"><span>sudo ufw status
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#顯示防火牆狀態，並且標記次序</span>
-</span></span><span style="display:flex;"><span>sudo ufw status numbered
-</span></span></code></pre></div><p><img src="https://i0.wp.com/blog.chihpindu.com/wp-content/uploads/2022/06/%E6%88%AA%E5%9C%96-2022-06-16-00.43.02.png?w=500&amp;ssl=1" alt="防火牆設定">
-防火牆設定</p>
-<p>上圖中顯示埠號的啟用狀態，相關設定與說明如下所述：</p>
-<p>埠號3389，此為遠端桌面連線所使用的埠號，可能看到這個項目有一個很不一樣的設定「來自 192.168.1.0/24」，這邊指的是3389這個埠號，只能由IP位址為192.168.1.XXX的裝置連入，意即只有在區網內的電腦，才可以利用遠端桌面的方式連接到此機器，設置的指令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#指定來源IP</span>
-</span></span><span style="display:flex;"><span>sudo ufw allow from 192.168.1.0/24 to any port <span style="color:#ae81ff">3389</span>
-</span></span></code></pre></div><p>接下來埠號22、80、443，分別為ssh、http、https，如果裝置為網頁伺服器，一般都會啟用http、https這兩個埠號，而會啟用22這個埠號，主要原因是伺服器並非日常使用的電腦，所以平常都會把圖形化關閉，讓伺服器只執行在文字模式，可以降低CPU、RAM的負擔，但是總不可能每次要調整伺服器就只能跑到伺服器前，開啟螢幕並且設定（一般情況下，伺服器都會拔掉所有IO裝置，使用遠端的方式設定），所以這個時候就會開啟22這個埠號，讓管理人員可以遠端設定，這個部份也可以與3389一樣設定只允許內網設定（安全性較佳），不過如果啟用為Anywhere的話，其實會彈性很多，可能剛好人不在機器旁，但又需要做設定，或是重啟機器，這個時候就可以由外網連線，設置的指令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#新增Anywhere的規則</span>
-</span></span><span style="display:flex;"><span>sudo ufw allow <span style="color:#ae81ff">22</span>
-</span></span></code></pre></div><p>但是，如果２２大開的話，可能會有安全性問題，所以這個部份可以為機器加入「兩階段認證」，不過這個功能非本篇的重點，所以不會加以說明，有興趣的可以搜尋「Linux + 兩階段認證」，設定的方式不難，不過多多少少可以增加伺服器的安全性。</p>
-<p>接下來說明其他常用的指令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#刪除規則（num代入查詢status　numbered的數值）</span>
-</span></span><span style="display:flex;"><span>sudo ufw delete num
-</span></span></code></pre></div><p>條件都設定完畢後，其實可以查看iptables的內容，使用指令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#查詢iptables規則</span>
-</span></span><span style="display:flex;"><span>sudo iptables -l
-</span></span></code></pre></div><p>其實有提供很多資訊，不過目前先列出上述使用ufw建立的規則，意即使用ufw設定規則，一樣會把這些規則加入到iptables，但是我們可以使用比較親民簡單的ufw達成。</p>
-<p><img src="https://i0.wp.com/blog.chihpindu.com/wp-content/uploads/2022/06/%E6%88%AA%E5%9C%96-2022-06-16-01.06.46.png?w=691&amp;ssl=1" alt="iptables"></p>
+              <p>使用過很多Blog服務，為什麼會選擇使用hugo來架設網站？因為：文章是屬於我自己。</p>
+<p>忘記是在什麼狀況下得知使用hugo產生靜態網站的方法，試過一次覺得還不錯，產生靜態網頁的速度很快，網路上也有很多主題（Theme）可以套用，更棒的是這些主題都是免費，隨時都可以換上不同的風格。</p>
+<p>使用hugo之前，曾經用過的寫文平台有：Google blogger、Google協作平台、WordPress.com，比較進階的就是自己架設一個Linux伺服器，安裝WordPress，好處是想要安裝什麼套件完全都可以自己來，不用受限於網上平台的限制，重點還是完全沒有廣告。</p>
+<p>也有在自己的伺服器上自己寫Express，為得就是想要一個可以寫文章，可以發佈在網路上的平台，而自己寫網站的優點就是想要做什麼功能都可以，完全不會被限制，例如：一個頁面用來呈現爬蟲的結果（目前在伺服器上運作中），不過後來仔細思考，這好像就違背了當初的想法，一開始就只是想要一個單純的寫文環境，可以分享、記錄自己在程式上的研究，或是想法…等，如果在寫文章之外，還要自己維護這個平台，沒辦法聚焦在寫文章這件事上，所有就有了使用hugo的想法。</p>
+<p>因為自己有gitHub的帳戶（應該大部份的工程師都會有），又GitHub可以部署一個靜態網站，也可以設定自己的DNS，所以目前這個網站使用Github Pages為架站平台，並且設定我自己的網域（chihpindu.com），也使用Github作hugo專案的版本控制。使用Github Pages來作架站平台的原因，一方面是為免費（目前是這樣，日後就不確定了），把網站架在github比較架在自己的伺服器上，更不受網速或是伺服器的等級影響。</p>
+<p>相關參考及引用的資訊：</p>
+<ol>
+<li><a href="https://ithelp.ithome.com.tw/users/20106430/ironman/3613">Hugo 貼身打造個人部落格</a></li>
+<li><a href="https://unsplash.com/">Unsplash</a></li>
+</ol>
               
 
 
@@ -343,9 +313,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">標籤</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/linux/">Linux</a>
-
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/server/">Server</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/hugo/">hugo</a>
 
                   </div>
                 
@@ -358,7 +326,7 @@ if (!doNotTrack) {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" data-tooltip="[Hugo] 為什麼使用hugo來架設網站？" aria-label="下一篇: [Hugo] 為什麼使用hugo來架設網站？">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -366,7 +334,7 @@ if (!doNotTrack) {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/06/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/" data-tooltip="[NodeJs] 台灣彩券最新開獎號碼" aria-label="上一篇: [NodeJs] 台灣彩券最新開獎號碼">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" data-tooltip="[自架伺服器] 基礎防火牆設定 使用ufw" aria-label="上一篇: [自架伺服器] 基礎防火牆設定 使用ufw">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -384,13 +352,13 @@ if (!doNotTrack) {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -429,7 +397,7 @@ if (!doNotTrack) {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" data-tooltip="[Hugo] 為什麼使用hugo來架設網站？" aria-label="下一篇: [Hugo] 為什麼使用hugo來架設網站？">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -437,7 +405,7 @@ if (!doNotTrack) {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/06/nodejs-%E5%8F%B0%E7%81%A3%E5%BD%A9%E5%88%B8%E6%9C%80%E6%96%B0%E9%96%8B%E7%8D%8E%E8%99%9F%E7%A2%BC/" data-tooltip="[NodeJs] 台灣彩券最新開獎號碼" aria-label="上一篇: [NodeJs] 台灣彩券最新開獎號碼">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" data-tooltip="[自架伺服器] 基礎防火牆設定 使用ufw" aria-label="上一篇: [自架伺服器] 基礎防火牆設定 使用ufw">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -455,13 +423,13 @@ if (!doNotTrack) {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2022/06/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E5%9F%BA%E7%A4%8E%E9%98%B2%E7%81%AB%E7%89%86%E8%A8%AD%E5%AE%9A-%E4%BD%BF%E7%94%A8ufw/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%BD%BF%E7%94%A8hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -486,13 +454,13 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2022%2F06%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-%25E5%259F%25BA%25E7%25A4%258E%25E9%2598%25B2%25E7%2581%25AB%25E7%2589%2586%25E8%25A8%25AD%25E5%25AE%259A-%25E4%25BD%25BF%25E7%2594%25A8ufw%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F04%2Fhugo-%25E7%2582%25BA%25E4%25BB%2580%25E9%25BA%25BC%25E4%25BD%25BF%25E7%2594%25A8hugo%25E4%25BE%2586%25E6%259E%25B6%25E8%25A8%25AD%25E7%25B6%25B2%25E7%25AB%2599%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2022%2F06%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-%25E5%259F%25BA%25E7%25A4%258E%25E9%2598%25B2%25E7%2581%25AB%25E7%2589%2586%25E8%25A8%25AD%25E5%25AE%259A-%25E4%25BD%25BF%25E7%2594%25A8ufw%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F04%2Fhugo-%25E7%2582%25BA%25E4%25BB%2580%25E9%25BA%25BC%25E4%25BD%25BF%25E7%2594%25A8hugo%25E4%25BE%2586%25E6%259E%25B6%25E8%25A8%25AD%25E7%25B6%25B2%25E7%25AB%2599%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>
