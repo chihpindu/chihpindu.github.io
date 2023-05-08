@@ -32,7 +32,7 @@
     }
     
   },
-  "description": "vim\n",
+  "description": "vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。\n",
   "keywords": []
 }
 
@@ -43,18 +43,18 @@
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="vim">
+<meta name="description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
 
 
-<meta property="og:description" content="vim">
+<meta property="og:description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Vim] Vim基本指令筆記">
 <meta name="twitter:title" content="[Vim] Vim基本指令筆記">
 <meta property="og:url" content="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/">
 <meta property="twitter:url" content="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="vim">
-<meta name="twitter:description" content="vim">
+<meta property="og:description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
+<meta name="twitter:description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
 <meta property="og:locale" content="zh-tw">
 
   
@@ -314,8 +314,38 @@ if (!doNotTrack) {
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>vim</p>
-<h2 id="儲存相關指令">儲存相關指令</h2>
+              <p>vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。</p>
+<h2 id="基本操作">基本操作</h2>
+<h3 id="模式切換">模式切換</h3>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">命令模式：
+i - 進入輸入模式。（游標在目前位置）
+a - 進入輸入模式。（游標在下一個文字的位置）
+o - 進入輸入模式。（游標在新行位置）
+r - 進入替換模式，可以替換目前游標位置的文字。
+x - 剪下。（可搭配v選取，及p貼上）
+dd - 剪下整行文字。
+yy - 複製整行文字。
+p - 貼上。
+v - 可移動游標選取內容。
+u - 上一步。（撤銷上一個動作）。
+ctrl+r - 下一步。 （撤銷上一個恢復）。
+: - 進入底線命令模式。
+
+輸入模式：
+esc - 進入命令模式。
+
+底線命令：（加入!表示強制執行，但也有可能無法執行）
+:w - 寫入。
+:w! - 強制寫入。（如果權限不足，可以使用下述的方式強制儲存）
+:q - 離開vim。
+:wq - 寫入並離開。
+</code></pre><h3 id="游標控制">游標控制</h3>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash="># 下述指令使用環境為：命令模式
+hjkl分別為左下上右，也可以直接使用鍵盤上的上下左右方向鍵。
+w 及 b 為向後、向前移動一個單字。
+^ 及 $ 為移動到行首與行末。
+gg 及 G 為移動到文件起始與文件結尾。
+</code></pre><h2 id="儲存相關指令">儲存相關指令</h2>
 <h3 id="強制儲存">強制儲存</h3>
 <p>進入並且編輯，等到要儲存（:w!）的時候，因為權限不足的關係，造成無法儲存，又因為已編輯內容，未儲存，強制直接離開編輯的資料就消失，所以可以執行下述的指令，強制儲存檔案。</p>
 <pre tabindex="0"><code class="language-bash=" data-lang="bash="># w：vim的標準寫入；!sudo：執行外部指令，並將權限提升；
