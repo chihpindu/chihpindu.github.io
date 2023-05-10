@@ -7,10 +7,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "[Vim] Vim基本指令筆記",
+  "headline": "[Hugo] 自定義Hugo的Tags顯示",
   
-  "datePublished": "2023-05-05T00:11:16+08:00",
-  "dateModified": "2023-05-05T00:11:16+08:00",
+  "datePublished": "2023-05-10T18:03:10+08:00",
+  "dateModified": "2023-05-10T18:03:10+08:00",
   "author": {
     "@type": "Person",
     "name": "貓咖啡工作室",
@@ -20,7 +20,7 @@
   },
   "mainEntityOfPage": { 
     "@type": "WebPage",
-    "@id": "https:\/\/chihpindu.github.io\/2023\/05\/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98\/" 
+    "@id": "https:\/\/chihpindu.github.io\/2023\/05\/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA\/" 
   },
   "publisher": {
     "@type": "Organization",
@@ -32,7 +32,7 @@
     }
     
   },
-  "description": "vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。\n",
+  "description": "Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD + 架在家裡的linux伺服器。\n",
   "keywords": []
 }
 
@@ -43,39 +43,33 @@
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
+<meta name="description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
 
 
-<meta property="og:description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
+<meta property="og:description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Vim] Vim基本指令筆記">
-<meta name="twitter:title" content="[Vim] Vim基本指令筆記">
-<meta property="og:url" content="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/">
-<meta property="twitter:url" content="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/">
+<meta property="og:title" content="[Hugo] 自定義Hugo的Tags顯示">
+<meta name="twitter:title" content="[Hugo] 自定義Hugo的Tags顯示">
+<meta property="og:url" content="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
-<meta name="twitter:description" content="vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。">
+<meta property="og:description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
+<meta name="twitter:description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
 <meta property="og:locale" content="zh-tw">
 
   
-    <meta property="article:published_time" content="2023-05-05T00:11:16">
+    <meta property="article:published_time" content="2023-05-10T18:03:10">
   
   
-    <meta property="article:modified_time" content="2023-05-05T00:11:16">
+    <meta property="article:modified_time" content="2023-05-10T18:03:10">
   
   
-  
-    
-      <meta property="article:section" content="自架伺服器">
-    
   
   
     
       <meta property="article:tag" content="貓咖啡工作室">
     
-      <meta property="article:tag" content="Linux">
-    
-      <meta property="article:tag" content="vim">
+      <meta property="article:tag" content="hugo">
     
   
 
@@ -96,14 +90,14 @@
 
 
 
-    <title>[Vim] Vim基本指令筆記</title>
+    <title>[Hugo] 自定義Hugo的Tags顯示</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/">
+    <link rel="canonical" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -278,76 +272,97 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      [Vim] Vim基本指令筆記
+      [Hugo] 自定義Hugo的Tags顯示
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2023-05-05T00:11:16&#43;08:00">
+      <time datetime="2023-05-10T18:03:10&#43;08:00">
         
   
   
   
   
-    2023年05月05日 00:11:16
+    2023年05月10日 18:03:10
   
 
       </time>
     
     
-  
-  
-    <span>分類</span>
-    
-      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
-    
-  
-
   </div>
 
 </div>
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>vim是一套Unix系統均會內建的編輯器，用來簡單編輯檔案不難，不過光無法使用滑鼠，只能使用鍵盤編輯操作，就讓很多人卻步（包含我），不過在一次看過網路大神直播講解vim的時候，深深的被它所吸引，所以就有了這篇筆記文。</p>
-<h2 id="基本操作">基本操作</h2>
-<h3 id="模式切換">模式切換</h3>
-<pre tabindex="0"><code class="language-bash=" data-lang="bash=">命令模式：
-i - 進入輸入模式。（游標在目前位置）
-a - 進入輸入模式。（游標在下一個文字的位置）
-o - 進入輸入模式。（游標在新行位置）
-r - 進入替換模式，可以替換目前游標位置的文字。
-x - 剪下。（可搭配v選取，及p貼上）
-dd - 剪下整行文字。
-yy - 複製整行文字。
-p - 貼上。
-v - 可移動游標選取內容。
-u - 上一步。（撤銷上一個動作）。
-ctrl+r - 下一步。 （撤銷上一個恢復）。
-: - 進入底線命令模式。
-
-輸入模式：
-esc - 進入命令模式。
-
-底線命令：（加入!表示強制執行，但也有可能無法執行）
-:w - 寫入。
-:w! - 強制寫入。（如果權限不足，可以使用下述的方式強制儲存）
-:q - 離開vim。
-:wq - 寫入並離開。
-</code></pre><h3 id="游標控制">游標控制</h3>
-<pre tabindex="0"><code class="language-bash=" data-lang="bash="># 下述指令使用環境為：命令模式
-hjkl分別為左下上右，也可以直接使用鍵盤上的上下左右方向鍵。
-w 及 b 為向後、向前移動一個單字。
-^ 及 $ 為移動到行首與行末。
-gg 及 G 為移動到文件起始與文件結尾。
-</code></pre><h2 id="儲存相關指令">儲存相關指令</h2>
-<h3 id="強制儲存">強制儲存</h3>
-<p>進入並且編輯，等到要儲存（:w!）的時候，因為權限不足的關係，造成無法儲存，又因為已編輯內容，未儲存，強制直接離開編輯的資料就消失，所以可以執行下述的指令，強制儲存檔案。</p>
-<pre tabindex="0"><code class="language-bash=" data-lang="bash="># w：vim的標準寫入；!sudo：執行外部指令，並將權限提升；
-# tee：把stdin存到文件；%：vim的暫存器
-:w !sudo tee %
-</code></pre><p>參考資料： <a href="https://blog.longwin.com.tw/2018/11/vim-tee-sudo-permission-file-write-2018/">Vim 使用 tee 和 sudo 解決臨時權限不足的問題</a></p>
+              <p>Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD + 架在家裡的linux伺服器。</p>
+<p>很久之前就建立HackMD的帳號，不過由於Markdown語法不熟悉，帳號被我冷凍好一段時間，因為最近工作上的需要，才又開始寫Markdown，也在接觸Hugo後，才真的去學習怎麼使用。</p>
+<p>其實原本的想法是直接在Linux的環境，利用vim寫文章，對於vim很有興趣，並且也不排斥用vim來寫作，但是有一個很大的問題是，如果我要插入圖片，就會是一個很麻煩的事，需要把圖片直接放到Hugo專案，或是找一個圖片空間上傳圖片，取得連結後再放到文章中，好在使用HackMD一切都變的很簡單，把圖片拉到編輯畫面，就可以自動上傳圖片，設定的圖片的語法了。</p>
+<p>接下來又遇到另一個問題，使用MarkMD的話，雖然寫作環境很容易，點一點頁面功能就可以同步github上Hugo專案的文章，但是使用Tags來管理文章這一點，就會有一個很大的問題「文章散亂在不同的Tag中」，讓整個HackMD的介面雜亂無比，後來的解決辦法是關於Hugo專案的文章，第一個Tag都是「貓咖啡工作室」，如下：</p>
+<pre tabindex="0"><code class="language-yaml=" data-lang="yaml=">---
+title: &#34;[Hugo] 自定義Hugo的Tags顯示&#34;
+date: 2023-05-10T18:03:10+08:00
+draft: true
+tags: [&#34;貓咖啡工作室&#34;, &#34;hugo&#34;]
+---
+</code></pre><p>這樣HackMD的介面就會如下圖，網站的文章都會被放到同一個Tag中
+<img src="https://hackmd.io/_uploads/rkE-tmt4n.png" alt="HackMD管理我的寫文環境"></p>
+<p>雖然這樣的調整管理文章變的更容易，但是有一個問題是，我的Hugo網站上，每一篇文章都會有「貓咖啡工作室」這個標籤，雖然無害，但就是有疙瘩，所以就只能研究如何解決這個問題。</p>
+<p>順帶一提，目前我的Hugo專案使用的主題Theme是「tranquilpeak」，因對於Hugo仍是幼幼班等級，無法確定是否也適用其他的主題，只能等我下次換主題的時候再來驗證了。</p>
+<h3 id="前置作業">前置作業</h3>
+<p>先將./themes/tranquilpeak/layouts這個目錄整個複製到hugo專案的主目錄</p>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash="># 預設目前目錄為hugo主目錄
+cp themes/tranquilpeak/layouts layouts
+</code></pre><h3 id="調整layouts">調整layouts</h3>
+<ol>
+<li>移除文章內文的tag標籤</li>
+</ol>
+<pre tabindex="0"><code class="language-html=!" data-lang="html=!">&lt;!--檔案1：layouts/partials/post/tag.html--&gt;
+{{ range .Params.tags }}
+{{ if not (in . &#34;貓咖啡工作室&#34;) }}
+  &lt;a class=&#34;tag tag--primary tag--small&#34; href=&#34;{{ $.Site.LanguagePrefix }}/tags/{{ . | urlize }}/&#34;&gt;{{ . }}&lt;/a&gt;
+{{ end }}
+{{ end }}
+</code></pre><p>加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。</p>
+<p>※此判斷式的.表示tag的名稱，.不等於「貓咖啡工作室」，才會進入if程式碼區塊。</p>
+<ol start="2">
+<li>移除<a href="https://chihpindu.com/tags/">標籤頁</a>上的tag</li>
+</ol>
+<p>這個檔案有兩個部份需要調整，一是標籤上上方的標籤Tag</p>
+<pre tabindex="0"><code class="language-html=!" data-lang="html=!">&lt;!--檔案2：layouts/taxonomy/tag.terms.html--&gt;
+&lt;section&gt;
+  {{ range .Data.Terms.ByCount }}
+  {{ if not ( in .Name &#34;貓咖啡工作室&#34; ) }}
+    &lt;a class=&#34;tag tag--primary tag--small&#34; href=&#34;#{{ .Name | urlize }}-list&#34; data-tag=&#34;{{ .Name | lower }}&#34;&gt;
+      {{ .Name }}
+    &lt;/a&gt;
+  {{ end }}
+  {{ end }}
+&lt;/section&gt;
+&lt;!----&gt;
+</code></pre><p>section加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。</p>
+<p>以及下方標籤文章區塊</p>
+<pre tabindex="0"><code class="language-html=!" data-lang="html=!">&lt;!--檔案2：layouts/taxonomy/tag.terms.html--&gt;
+&lt;section class=&#34;boxes&#34;&gt;
+  {{ range .Data.Terms.ByCount }}
+  {{ if not (in .Name &#34;貓咖啡工作室&#34; ) }}
+    &lt;div id=&#34;{{ .Name | urlize }}-list&#34; class=&#34;archive box&#34; data-tag=&#34;{{ .Name | lower }}&#34;&gt;
+      &lt;h4 class=&#34;archive-title&#34;&gt;
+        &lt;a class=&#34;link-unstyled&#34; href=&#34;{{ .Name | urlize }}&#34;&gt;
+@@ -45,6 +48,7 @@ &lt;h4 class=&#34;archive-title&#34;&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  {{ end }}
+  {{ end }}
+&lt;/section&gt;
+&lt;!----&gt;
+</code></pre><p>section.boxes加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。</p>
+<p>調整後，重新執行hugo，就可以看到成效，如目前這篇文章的Tags為「tags: [&ldquo;貓咖啡工作室&rdquo;, &ldquo;hugo&rdquo;]」</p>
+<p>例是實際上看到的文章內容是：
+<img src="https://hackmd.io/_uploads/BJ4SLNt43.png" alt="文章排除Tag貓咖啡工作室"></p>
+<p><img src="https://hackmd.io/_uploads/S1EuIVKN3.png" alt="標籤頁排除Tag貓咖啡工作室"></p>
+<p>但是實際上是存在「貓咖啡工作室」這個Tag：<a href="https://chihpindu.com/tags/%E8%B2%93%E5%92%96%E5%95%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4/">貓咖啡工作室標籤頁</a></p>
               
 
 
@@ -364,11 +379,7 @@ gg 及 G 為移動到文件起始與文件結尾。
 
 
 
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/linux/">Linux</a>
-
-
-
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/vim/">vim</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/hugo/">hugo</a>
 
 
 
@@ -383,7 +394,7 @@ gg 及 G 為移動到文件起始與文件結尾。
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" data-tooltip="[Hugo] 自定義Hugo的Tags顯示" aria-label="下一篇: [Hugo] 自定義Hugo的Tags顯示">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -391,7 +402,7 @@ gg 及 G 為移動到文件起始與文件結尾。
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E9%81%B8%E6%93%87hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" data-tooltip="[Hugo] 為什麼選擇hugo來架設網站" aria-label="上一篇: [Hugo] 為什麼選擇hugo來架設網站">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" data-tooltip="[Vim] Vim基本指令筆記" aria-label="上一篇: [Vim] Vim基本指令筆記">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -409,13 +420,13 @@ gg 及 G 為移動到文件起始與文件結尾。
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -454,7 +465,7 @@ gg 及 G 為移動到文件起始與文件結尾。
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" data-tooltip="[Hugo] 自定義Hugo的Tags顯示" aria-label="下一篇: [Hugo] 自定義Hugo的Tags顯示">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -462,7 +473,7 @@ gg 及 G 為移動到文件起始與文件結尾。
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/04/hugo-%E7%82%BA%E4%BB%80%E9%BA%BC%E9%81%B8%E6%93%87hugo%E4%BE%86%E6%9E%B6%E8%A8%AD%E7%B6%B2%E7%AB%99/" data-tooltip="[Hugo] 為什麼選擇hugo來架設網站" aria-label="上一篇: [Hugo] 為什麼選擇hugo來架設網站">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" data-tooltip="[Vim] Vim基本指令筆記" aria-label="上一篇: [Vim] Vim基本指令筆記">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -480,13 +491,13 @@ gg 及 G 為移動到文件起始與文件結尾。
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -511,13 +522,13 @@ gg 及 G 為移動到文件起始與文件結尾。
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2Fvim-vim%25E5%259F%25BA%25E6%259C%25AC%25E6%258C%2587%25E4%25BB%25A4%25E7%25AD%2586%25E8%25A8%2598%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2Fhugo-%25E8%2587%25AA%25E5%25AE%259A%25E7%25BE%25A9hugo%25E7%259A%2584tags%25E9%25A1%25AF%25E7%25A4%25BA%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2Fvim-vim%25E5%259F%25BA%25E6%259C%25AC%25E6%258C%2587%25E4%25BB%25A4%25E7%25AD%2586%25E8%25A8%2598%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2Fhugo-%25E8%2587%25AA%25E5%25AE%259A%25E7%25BE%25A9hugo%25E7%259A%2584tags%25E9%25A1%25AF%25E7%25A4%25BA%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>

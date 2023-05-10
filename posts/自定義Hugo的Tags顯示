@@ -1,0 +1,99 @@
+---
+title: "[Hugo] 自定義Hugo的Tags顯示"
+date: 2023-05-10T18:03:10+08:00
+draft: false
+tags: ["貓咖啡工作室", "hugo"]
+---
+
+Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD + 架在家裡的linux伺服器。
+
+<!--more-->
+
+很久之前就建立HackMD的帳號，不過由於Markdown語法不熟悉，帳號被我冷凍好一段時間，因為最近工作上的需要，才又開始寫Markdown，也在接觸Hugo後，才真的去學習怎麼使用。
+
+其實原本的想法是直接在Linux的環境，利用vim寫文章，對於vim很有興趣，並且也不排斥用vim來寫作，但是有一個很大的問題是，如果我要插入圖片，就會是一個很麻煩的事，需要把圖片直接放到Hugo專案，或是找一個圖片空間上傳圖片，取得連結後再放到文章中，好在使用HackMD一切都變的很簡單，把圖片拉到編輯畫面，就可以自動上傳圖片，設定的圖片的語法了。
+
+接下來又遇到另一個問題，使用MarkMD的話，雖然寫作環境很容易，點一點頁面功能就可以同步github上Hugo專案的文章，但是使用Tags來管理文章這一點，就會有一個很大的問題「文章散亂在不同的Tag中」，讓整個HackMD的介面雜亂無比，後來的解決辦法是關於Hugo專案的文章，第一個Tag都是「貓咖啡工作室」，如下：
+
+```yaml=
+---
+title: "[Hugo] 自定義Hugo的Tags顯示"
+date: 2023-05-10T18:03:10+08:00
+draft: true
+tags: ["貓咖啡工作室", "hugo"]
+---
+```
+
+這樣HackMD的介面就會如下圖，網站的文章都會被放到同一個Tag中
+![HackMD管理我的寫文環境](https://hackmd.io/_uploads/rkE-tmt4n.png)
+
+雖然這樣的調整管理文章變的更容易，但是有一個問題是，我的Hugo網站上，每一篇文章都會有「貓咖啡工作室」這個標籤，雖然無害，但就是有疙瘩，所以就只能研究如何解決這個問題。
+
+順帶一提，目前我的Hugo專案使用的主題Theme是「tranquilpeak」，因對於Hugo仍是幼幼班等級，無法確定是否也適用其他的主題，只能等我下次換主題的時候再來驗證了。
+
+### 前置作業
+先將./themes/tranquilpeak/layouts這個目錄整個複製到hugo專案的主目錄
+
+```bash=
+# 預設目前目錄為hugo主目錄
+cp themes/tranquilpeak/layouts layouts
+```
+
+### 調整layouts
+
+1. 移除文章內文的tag標籤
+```html=!
+<!--檔案1：layouts/partials/post/tag.html-->
+{{ range .Params.tags }}
+{{ if not (in . "貓咖啡工作室") }}
+  <a class="tag tag--primary tag--small" href="{{ $.Site.LanguagePrefix }}/tags/{{ . | urlize }}/">{{ . }}</a>
+{{ end }}
+{{ end }}
+```
+加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。
+
+※此判斷式的.表示tag的名稱，.不等於「貓咖啡工作室」，才會進入if程式碼區塊。
+
+2. 移除[標籤頁](https://chihpindu.com/tags/)上的tag
+
+這個檔案有兩個部份需要調整，一是標籤上上方的標籤Tag
+```html=!
+<!--檔案2：layouts/taxonomy/tag.terms.html-->
+<section>
+  {{ range .Data.Terms.ByCount }}
+  {{ if not ( in .Name "貓咖啡工作室" ) }}
+    <a class="tag tag--primary tag--small" href="#{{ .Name | urlize }}-list" data-tag="{{ .Name | lower }}">
+      {{ .Name }}
+    </a>
+  {{ end }}
+  {{ end }}
+</section>
+<!---->
+
+```
+section加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。
+
+
+以及下方標籤文章區塊
+```html=!
+<!--檔案2：layouts/taxonomy/tag.terms.html-->
+<section class="boxes">
+  {{ range .Data.Terms.ByCount }}
+  {{ if not (in .Name "貓咖啡工作室" ) }}
+    <div id="{{ .Name | urlize }}-list" class="archive box" data-tag="{{ .Name | lower }}">
+      <h4 class="archive-title">
+        <a class="link-unstyled" href="{{ .Name | urlize }}">
+@@ -45,6 +48,7 @@ <h4 class="archive-title">
+      </ul>
+    </div>
+  {{ end }}
+  {{ end }}
+</section>
+<!---->
+
+```
+section.boxes加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。
+
+調整後，重新執行hugo，就可以看到成效，如目前這篇文章的Tags為「tags: ["貓咖啡工作室", "hugo"]」
+
+例是實際上看到的文章內容是：
