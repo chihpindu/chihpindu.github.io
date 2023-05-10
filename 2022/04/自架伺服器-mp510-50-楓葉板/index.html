@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "[自架伺服器] MP510-50 楓葉板",
+  
+  "datePublished": "2022-04-11T15:36:14+08:00",
+  "dateModified": "2022-04-11T15:36:14+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "貓咖啡工作室",
+    
+    "image": "https://chihpindu.github.io/images/maruko.jpg"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/chihpindu.github.io\/2022\/04\/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "貓咖啡工作室",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chihpindu.github.io/images/maruko.jpg"
+    }
+    
+  },
+  "description": "一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲\u0026hellip;\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="貓咖啡工作室">
+<meta name="keywords" content="">
+<meta name="description" content="一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&hellip;">
+
+
+<meta property="og:description" content="一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&hellip;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[自架伺服器] MP510-50 楓葉板">
+<meta name="twitter:title" content="[自架伺服器] MP510-50 楓葉板">
+<meta property="og:url" content="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/">
+<meta property="og:site_name" content="貓咖啡工作室">
+<meta property="og:description" content="一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&hellip;">
+<meta name="twitter:description" content="一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&hellip;">
+<meta property="og:locale" content="zh-tw">
+
+  
+    <meta property="article:published_time" content="2022-04-11T15:36:14">
+  
+  
+    <meta property="article:modified_time" content="2022-04-11T15:36:14">
+  
+  
+  
+    
+      <meta property="article:section" content="自架伺服器">
+    
+  
+  
+    
+      <meta property="article:tag" content="貓咖啡工作室">
+    
+      <meta property="article:tag" content="Linux">
+    
+      <meta property="article:tag" content="Server">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://chihpindu.github.io/images/maruko.jpg">
+  <meta property="twitter:image" content="https://chihpindu.github.io/images/maruko.jpg">
+
+
+
+
+
+
+    <title>[自架伺服器] MP510-50 楓葉板</title>
+
+    <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://chihpindu.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://chihpindu.github.io/css/custom.css">
+      
+    
+
+    
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEMF7JG48J"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-TEMF7JG48J', { 'anonymize_ip': false });
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="2">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://chihpindu.github.io/" aria-label="前往首頁">貓咖啡工作室</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://chihpindu.github.io/#about" aria-label="進入連結: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://chihpindu.github.io/images/maruko.jpg" alt="作者的圖片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="2">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://chihpindu.github.io/#about" aria-label="閱讀有關作者的更多訊息">
+          <img class="sidebar-profile-picture" src="https://chihpindu.github.io/images/maruko.jpg" alt="作者的圖片" />
+        </a>
+        <h4 class="sidebar-profile-name">貓咖啡工作室</h4>
+        
+          <h5 class="sidebar-profile-bio">喜歡研究新技術，這裡會記錄程式筆記、實作、想法。</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://chihpindu.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首頁</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://chihpindu.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">所有文章</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://chihpindu.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分類</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://chihpindu.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">標籤</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://chihpindu.github.io/hiddens/privacy" title="Privacy">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-lock" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">隱私權政策</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://chihpindu.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">關於</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/chihpindu" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.facebook.com/chihpin.du" target="_blank" rel="noopener" title="Facebook">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-facebook" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Facebook</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="2"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      [自架伺服器] MP510-50 楓葉板
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-04-11T15:36:14&#43;08:00">
+        
+  
+  
+  
+  
+    2022年04月11日 15:36:14
+  
+
+      </time>
+    
+    
+  
+  
+    <span>分類</span>
+    
+      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&hellip;</p>
+<p>但是又不想要真正的組一台電腦，原因是伺服器需長時間啟動，但是一直開著又會耗電耗能，所以一直都沒有實際去行動，雖然有考慮過買一台迷你電腦，不過一樣有耗能的問題，所以一直延宕到今日，直到近期看到楓葉板，與樹莓派很類似（是一部小電腦），但又不完全一樣的東西，MP510-50是一直有完整外盒介面，甚至連作業系統都安裝好，重點是耗電量小，完全符合我的要求，雖然還不清楚效能部份會不會失望，不過總算是踏出一步了。</p>
+<p>MP510-50官網介紹：<a href="https://www.mapleboard.org/mp510-50/">https://www.mapleboard.org/mp510-50/</a></p>
+<p>簡單計算一下能耗（不確定是不是這樣計算，如果有誤，再請賜教），這部機器使用的電源供應器是Output 15w max，使用電費計算機計算24小時，且一直處於高負載的狀況，一天約能耗約0.36度</p>
+<p><img src="https://i0.wp.com/blog.chihpindu.com/wp-content/uploads/2022/04/e688aae59c96-2022-04-11-00.56.07.png?resize=768%2C405&amp;ssl=1" alt="電費計算機">
+參考自：https://elec.0123456789.tw/</p>
+<p>根據台電的電費計價來計算，一個月長時間啟動費用大致在17~69元左右（端看全戶用電量決定費用），可說是非常便宜。</p>
+<p><img src="https://i0.wp.com/blog.chihpindu.com/wp-content/uploads/2022/04/e59c96e78987.png?resize=768%2C262&amp;ssl=1" alt="電費計價">
+參考自：<a href="https://www.taipower.com.tw/upload/238/2021101315451523922.pdf">https://www.taipower.com.tw/upload/238/2021101315451523922.pdf</a></p>
+<p>決定好設備，後續就可以開始設定，加入新玩意了。</p>
+<hr>
+<p>2023/04/14 更新</p>
+<p>使用一段時間後，因為是初次自行架設伺服器，所以總認為整台機器被自己弄的亂七八糟，安裝了很多當初為了測試而安裝的東西，目前已不使用，或是做了一些設定但是已經無法恢復，所以就有了重灌作業系統的想法。</p>
+<p>原本以為與一般電腦重灌一樣，進入BIOS選擇光碟或是usb開機，但是測試好一陣子都無法成功，就開始Google找原因，後來找到了MP510的論壇，爬了幾篇文才發現沒辦法自己重新灌系統，一定要把機器寄回公司，由原廠代為執行系統重灌，雖然一年內可以免費重灌，不過總認為不太方便，不過如果不會有重灌需求的狀況下，如文章所說明，很推薦這台機器作輕度個人電腦，或是簡易的伺服器來使用，不過就無法自行重灌這個問題來看，我是不會再選擇這部機器了。（除非後來釋出自行重新安裝系統的方法）</p>
+<p>相關論壇可參閱：<a href="https://forum.mapleboard.org/forum/mp510/">https://forum.mapleboard.org/forum/mp510/</a></p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">標籤</span><br/>
+                    
+
+
+
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/linux/">Linux</a>
+
+
+
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/server/">Server</a>
+
+
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E9%97%9C%E9%96%89%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2/" data-tooltip="[自架伺服器] 關閉圖形化介面" aria-label="下一篇: [自架伺服器] 關閉圖形化介面">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" data-tooltip="[Hugo] 常用指令" aria-label="上一篇: [Hugo] 常用指令">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個文章">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="移至最上方">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 貓咖啡工作室. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="2">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-%E9%97%9C%E9%96%89%E5%9C%96%E5%BD%A2%E5%8C%96%E4%BB%8B%E9%9D%A2/" data-tooltip="[自架伺服器] 關閉圖形化介面" aria-label="下一篇: [自架伺服器] 關閉圖形化介面">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2021/10/hugo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" data-tooltip="[Hugo] 常用指令" aria-label="上一篇: [Hugo] 常用指令">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個文章">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="移至最上方">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="2">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2022%2F04%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-mp510-50-%25E6%25A5%2593%25E8%2591%2589%25E6%259D%25BF%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2022%2F04%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-mp510-50-%25E6%25A5%2593%25E8%2591%2589%25E6%259D%25BF%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://chihpindu.github.io/images/maruko.jpg" alt="作者的圖片" />
+    
+    <h4 id="about-card-name">貓咖啡工作室</h4>
+    
+      <div id="about-card-bio">喜歡研究新技術，這裡會記錄程式筆記、實作、想法。</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        軟體工程師
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        台南, 台灣
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://chihpindu.github.io/images/cover_coffee2.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://chihpindu.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
