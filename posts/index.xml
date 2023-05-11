@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 貓咖啡工作室</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 10 May 2023 18:03:10 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 May 2023 18:29:08 +0800</lastBuildDate><atom:link href="https://chihpindu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[自建伺服器] N秒後自動轉頁至○○○</title>
+      <link>https://chihpindu.github.io/2023/05/%E8%87%AA%E5%BB%BA%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/</link>
+      <pubDate>Thu, 11 May 2023 18:29:08 +0800</pubDate>
+      
+      <guid>https://chihpindu.github.io/2023/05/%E8%87%AA%E5%BB%BA%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/</guid>
+      <description>&lt;p&gt;日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Hugo] 自定義Hugo的Tags顯示</title>
       <link>https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/</link>
