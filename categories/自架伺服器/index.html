@@ -294,9 +294,7 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt">
       
-        安裝Nginx #更新套件清單 sudo apt update #安裝nginx apt install nginx 設定檔Config 路徑：./etc/nginx/conf.d 一個子網域建立一個conf檔案（方便管理），後續執行Let&rsquo;s Encrypt的時候，也會根據子網域，將相關的項目寫到對應的檔案內，例如：子網域為blog.○○○.com，則新增檔案blog.conf。
-操作指令 #查看目前nginx狀態 systemctl status nginx #啟動nginx systemctl start nginx #重啟nginx systemctl restart nginx Let&rsquo;s Encrypt，設定https 前置工作 需要先有購買一個DNS，並且設定好子網域網址，例如：目前要設定的https的網址為https://dev.○○○.com ，就需要先設定好這個網域。
-指令 # 安裝相關套件 sudo apt install python3-certbot-nginx #　設定使用https的網域，例如下指令設定三個網域、子網域 sudo certbot --nginx -d xxx.com -d my.xxx.com -d blog.xxx.com 參考資料 Let&rsquo;s Encrypt官網
+        <p>Nginx基本指令與筆記。</p>
       
       <p>
         
