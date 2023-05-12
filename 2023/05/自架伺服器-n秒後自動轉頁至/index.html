@@ -7,10 +7,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "[Hugo] 自定義Hugo的Tags顯示",
+  "headline": "[自架伺服器] N秒後自動轉頁至○○○",
   
-  "datePublished": "2023-05-10T18:03:10+08:00",
-  "dateModified": "2023-05-10T18:03:10+08:00",
+  "datePublished": "2023-05-11T18:29:08+08:00",
+  "dateModified": "2023-05-11T18:29:08+08:00",
   "author": {
     "@type": "Person",
     "name": "貓咖啡工作室",
@@ -20,7 +20,7 @@
   },
   "mainEntityOfPage": { 
     "@type": "WebPage",
-    "@id": "https:\/\/chihpindu.github.io\/2023\/05\/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA\/" 
+    "@id": "https:\/\/chihpindu.github.io\/2023\/05\/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3\/" 
   },
   "publisher": {
     "@type": "Organization",
@@ -32,7 +32,7 @@
     }
     
   },
-  "description": "Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD + 架在家裡的linux伺服器。\n",
+  "description": "日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。\n",
   "keywords": []
 }
 
@@ -43,33 +43,39 @@
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
+<meta name="description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
 
 
-<meta property="og:description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
+<meta property="og:description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Hugo] 自定義Hugo的Tags顯示">
-<meta name="twitter:title" content="[Hugo] 自定義Hugo的Tags顯示">
-<meta property="og:url" content="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/">
-<meta property="twitter:url" content="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/">
+<meta property="og:title" content="[自架伺服器] N秒後自動轉頁至○○○">
+<meta name="twitter:title" content="[自架伺服器] N秒後自動轉頁至○○○">
+<meta property="og:url" content="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
-<meta name="twitter:description" content="Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD &#43; 架在家裡的linux伺服器。">
+<meta property="og:description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
+<meta name="twitter:description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
 <meta property="og:locale" content="zh-tw">
 
   
-    <meta property="article:published_time" content="2023-05-10T18:03:10">
+    <meta property="article:published_time" content="2023-05-11T18:29:08">
   
   
-    <meta property="article:modified_time" content="2023-05-10T18:03:10">
+    <meta property="article:modified_time" content="2023-05-11T18:29:08">
   
   
+  
+    
+      <meta property="article:section" content="自架伺服器">
+    
   
   
     
       <meta property="article:tag" content="貓咖啡工作室">
     
-      <meta property="article:tag" content="hugo">
+      <meta property="article:tag" content="Linux">
+    
+      <meta property="article:tag" content="Nginx">
     
   
 
@@ -90,14 +96,14 @@
 
 
 
-    <title>[Hugo] 自定義Hugo的Tags顯示</title>
+    <title>[自架伺服器] N秒後自動轉頁至○○○</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/">
+    <link rel="canonical" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -272,98 +278,78 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      [Hugo] 自定義Hugo的Tags顯示
+      [自架伺服器] N秒後自動轉頁至○○○
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2023-05-10T18:03:10&#43;08:00">
+      <time datetime="2023-05-11T18:29:08&#43;08:00">
         
   
   
   
   
-    2023年05月10日 18:03:10
+    2023年05月11日 18:29:08
   
 
       </time>
     
     
+  
+  
+    <span>分類</span>
+    
+      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
+    
+  
+
   </div>
 
 </div>
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>Hugo的網站建置完畢後，一直以來都在想怎麼建立寫文環境？最好不受地域、時間都可以寫文章，並且不需要把文字搬來搬去，僅靠github的版本控制來達成，我的最終的環境：HackMD + 架在家裡的linux伺服器。</p>
-<p>很久之前就建立HackMD的帳號，不過由於Markdown語法不熟悉，帳號被我冷凍好一段時間，因為最近工作上的需要，才又開始寫Markdown，也在接觸Hugo後，才真的去學習怎麼使用。</p>
-<p>其實原本的想法是直接在Linux的環境，利用vim寫文章，對於vim很有興趣，並且也不排斥用vim來寫作，但是有一個很大的問題是，如果我要插入圖片，就會是一個很麻煩的事，需要把圖片直接放到Hugo專案，或是找一個圖片空間上傳圖片，取得連結後再放到文章中，好在使用HackMD一切都變的很簡單，把圖片拉到編輯畫面，就可以自動上傳圖片，設定的圖片的語法了。</p>
-<p>接下來又遇到另一個問題，使用MarkMD的話，雖然寫作環境很容易，點一點頁面功能就可以同步github上Hugo專案的文章，但是使用Tags來管理文章這一點，就會有一個很大的問題「文章散亂在不同的Tag中」，讓整個HackMD的介面雜亂無比，後來的解決辦法是關於Hugo專案的文章，第一個Tag都是「貓咖啡工作室」，如下：</p>
-<pre tabindex="0"><code class="language-yaml=" data-lang="yaml=">---
-title: &#34;[Hugo] 自定義Hugo的Tags顯示&#34;
-date: 2023-05-10T18:03:10+08:00
-draft: true
-tags: [&#34;貓咖啡工作室&#34;, &#34;hugo&#34;]
----
-</code></pre><p>這樣HackMD的介面就會如下圖，網站的文章都會被放到同一個Tag中
-<img src="https://hackmd.io/_uploads/Sk8G3EY4n.png" alt="HackMD管理我的寫文環境"></p>
-<p>雖然這樣的調整管理文章變的更容易，但是有一個問題是，我的Hugo網站上，每一篇文章都會有「貓咖啡工作室」這個標籤，雖然無害，但就是有疙瘩，所以就只能研究如何解決這個問題。</p>
-<p>順帶一提，目前我的Hugo專案使用的主題Theme是「tranquilpeak」，因對於Hugo仍是幼幼班等級，無法確定是否也適用其他的主題，只能等我下次換主題的時候再來驗證了。</p>
-<h3 id="前置作業">前置作業</h3>
-<p>先將./themes/tranquilpeak/layouts這個目錄整個複製到hugo專案的主目錄</p>
-<pre tabindex="0"><code class="language-bash=" data-lang="bash="># 預設目前目錄為hugo主目錄
-cp themes/tranquilpeak/layouts layouts
-</code></pre><h3 id="調整layouts">調整layouts</h3>
-<ol>
-<li>移除文章內文的tag標籤</li>
-</ol>
-<pre tabindex="0"><code class="language-html=!" data-lang="html=!">&lt;!--檔案1：layouts/partials/post/tag.html--&gt;
-{{ range .Params.tags }}
-{{ if not (in . &#34;貓咖啡工作室&#34;) }}
-  &lt;a class=&#34;tag tag--primary tag--small&#34; href=&#34;{{ $.Site.LanguagePrefix }}/tags/{{ . | urlize }}/&#34;&gt;{{ . }}&lt;/a&gt;
-{{ end }}
-{{ end }}
-</code></pre><p>加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。</p>
-<p>※此判斷式的.表示tag的名稱，.不等於「貓咖啡工作室」，才會進入if程式碼區塊。</p>
-<ol start="2">
-<li>移除<a href="https://chihpindu.com/tags/">標籤頁</a>上的tag</li>
-</ol>
-<p>這個檔案有兩個部份需要調整，一是標籤上上方的標籤Tag</p>
-<pre tabindex="0"><code class="language-html=!" data-lang="html=!">&lt;!--檔案2：layouts/taxonomy/tag.terms.html--&gt;
-&lt;section&gt;
-  {{ range .Data.Terms.ByCount }}
-  {{ if not ( in .Name &#34;貓咖啡工作室&#34; ) }}
-    &lt;a class=&#34;tag tag--primary tag--small&#34; href=&#34;#{{ .Name | urlize }}-list&#34; data-tag=&#34;{{ .Name | lower }}&#34;&gt;
-      {{ .Name }}
-    &lt;/a&gt;
-  {{ end }}
-  {{ end }}
-&lt;/section&gt;
-&lt;!----&gt;
-</code></pre><p>section加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。</p>
-<p>以及下方標籤文章區塊</p>
-<pre tabindex="0"><code class="language-html=!" data-lang="html=!">&lt;!--檔案2：layouts/taxonomy/tag.terms.html--&gt;
-&lt;section class=&#34;boxes&#34;&gt;
-  {{ range .Data.Terms.ByCount }}
-  {{ if not (in .Name &#34;貓咖啡工作室&#34; ) }}
-    &lt;div id=&#34;{{ .Name | urlize }}-list&#34; class=&#34;archive box&#34; data-tag=&#34;{{ .Name | lower }}&#34;&gt;
-      &lt;h4 class=&#34;archive-title&#34;&gt;
-        &lt;a class=&#34;link-unstyled&#34; href=&#34;{{ .Name | urlize }}&#34;&gt;
-@@ -45,6 +48,7 @@ &lt;h4 class=&#34;archive-title&#34;&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  {{ end }}
-  {{ end }}
-&lt;/section&gt;
-&lt;!----&gt;
-</code></pre><p>section.boxes加入「if-end」的判斷式，來排除「貓咖啡工作室」這個Tag。</p>
-<p>調整後，重新執行hugo，就可以看到成效，如目前這篇文章的Tags為「tags: [&ldquo;貓咖啡工作室&rdquo;, &ldquo;hugo&rdquo;]」</p>
-<p>例是實際上看到的文章內容是：
-<img src="https://hackmd.io/_uploads/BJ4SLNt43.png" alt="文章排除Tag貓咖啡工作室"></p>
-<p><img src="https://hackmd.io/_uploads/S1EuIVKN3.png" alt="標籤頁排除Tag貓咖啡工作室"></p>
-<p>但是實際上是存在「貓咖啡工作室」這個Tag：<a href="https://chihpindu.com/tags/%E8%B2%93%E5%92%96%E5%95%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4/">貓咖啡工作室標籤頁</a>
-<img src="https://hackmd.io/_uploads/HyYyuNtEn.png" alt="貓咖啡工作室標籤頁"></p>
+              <p>日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。</p>
+<p>剛有這個想法到實際產出這個html頁，大約是5分鐘，因為我把這個工作「外包」給ChatGPT（免費版本），簡單的發問：「寫一個HTML N秒後轉頁」，不到10秒的時間，AI就把頁面寫好了，我只要簡單的調整一下內容，修改樣式，就可以直接上線。</p>
+<p>使用ChatGPT大約一個禮拜左右，就我目前使用的狀況，以及AI回應的內容，我認為還不致於完全取代掉程式設計師，也可能是我目前使用的是免費版本，說不定付費版本又更加強大。</p>
+<p>雖然寫程式的部份很厲害，不過目前仍是一個指令一個動作，可以很容易的寫出一個小程式，不過更複雜，需要大量整合，很多規則的系統，仍然是需要工程師來整合處理，況且目前寫出來的程式也不是百分百可以直接執行，還是需要人為介入來處理問題，不過就我這篇文章需求來說，AI確實是可以很快速的協助工程師完成工作。</p>
+<p>如圖，AI寫的程式：
+<img src="https://hackmd.io/_uploads/SklCkt9En.png" alt="AI寫程式"></p>
+<p>簡單調整後的程式：</p>
+<pre tabindex="0"><code class="language-htmlembedded!=" data-lang="htmlembedded!=">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;5秒後自動轉址...&lt;/title&gt;
+	&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1, user-scalable=no&#34; /&gt;
+  &lt;/head&gt;
+  &lt;style&gt;
+	body {
+		padding: 5% 20%;
+		text-align: center;
+		font-size: 2em;
+	}
+  &lt;/style&gt;
+  &lt;body&gt;
+    &lt;p&gt;將在&lt;span id=&#34;countdown&#34;&gt;5&lt;/span&gt;秒後，自動轉址至 &lt;a href=&#34;https://chihpindu.com&#34;&gt;貓咖啡工作室&lt;/a&gt;&lt;/p&gt;
+	&lt;p&gt;或是點擊 &lt;a href=&#34;https://chihpindu.com&#34;&gt;https://chihpindu.com&lt;/a&gt; 立即前往 &lt;/p&gt;
+    &lt;script&gt;
+      var seconds = 5;
+      setInterval(function() {
+        seconds--;
+		if(seconds &gt;= 0){
+			document.getElementById(&#34;countdown&#34;).textContent = seconds;
+		}
+		
+        if (seconds == 0) {
+          window.location.href = &#34;https://chihpindu.com&#34;;
+        }
+      }, 1000);
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>執行結果如下：
+<img src="https://hackmd.io/_uploads/B1GFxBqEn.png" alt="N秒後自動轉址結果"></p>
               
 
 
@@ -380,7 +366,11 @@ cp themes/tranquilpeak/layouts layouts
 
 
 
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/hugo/">hugo</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/linux/">Linux</a>
+
+
+
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/nginx/">Nginx</a>
 
 
 
@@ -395,7 +385,7 @@ cp themes/tranquilpeak/layouts layouts
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" data-tooltip="[自架伺服器] N秒後自動轉頁至○○○" aria-label="下一篇: [自架伺服器] N秒後自動轉頁至○○○">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -403,7 +393,7 @@ cp themes/tranquilpeak/layouts layouts
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" data-tooltip="[Vim] Vim基本指令筆記" aria-label="上一篇: [Vim] Vim基本指令筆記">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" data-tooltip="[Hugo] 自定義Hugo的Tags顯示" aria-label="上一篇: [Hugo] 自定義Hugo的Tags顯示">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -421,13 +411,13 @@ cp themes/tranquilpeak/layouts layouts
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -466,7 +456,7 @@ cp themes/tranquilpeak/layouts layouts
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" data-tooltip="[自架伺服器] N秒後自動轉頁至○○○" aria-label="下一篇: [自架伺服器] N秒後自動轉頁至○○○">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -474,7 +464,7 @@ cp themes/tranquilpeak/layouts layouts
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/vim-vim%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%E7%AD%86%E8%A8%98/" data-tooltip="[Vim] Vim基本指令筆記" aria-label="上一篇: [Vim] Vim基本指令筆記">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" data-tooltip="[Hugo] 自定義Hugo的Tags顯示" aria-label="上一篇: [Hugo] 自定義Hugo的Tags顯示">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -492,13 +482,13 @@ cp themes/tranquilpeak/layouts layouts
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -523,13 +513,13 @@ cp themes/tranquilpeak/layouts layouts
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2Fhugo-%25E8%2587%25AA%25E5%25AE%259A%25E7%25BE%25A9hugo%25E7%259A%2584tags%25E9%25A1%25AF%25E7%25A4%25BA%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-n%25E7%25A7%2592%25E5%25BE%258C%25E8%2587%25AA%25E5%258B%2595%25E8%25BD%2589%25E9%25A0%2581%25E8%2587%25B3%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2Fhugo-%25E8%2587%25AA%25E5%25AE%259A%25E7%25BE%25A9hugo%25E7%259A%2584tags%25E9%25A1%25AF%25E7%25A4%25BA%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-n%25E7%25A7%2592%25E5%25BE%258C%25E8%2587%25AA%25E5%258B%2595%25E8%25BD%2589%25E9%25A0%2581%25E8%2587%25B3%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>
