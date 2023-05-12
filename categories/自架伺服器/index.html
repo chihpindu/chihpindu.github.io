@@ -261,6 +261,73 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title">
       
+        <a class="link-unstyled" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-nginx%E5%9F%BA%E6%9C%AC%E8%A8%AD%E5%AE%9A%E7%AD%86%E8%A8%98/" aria-label="開啟文章: [自架伺服器] Nginx基本設定筆記">
+      
+          [自架伺服器] Nginx基本設定筆記
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-05-12T19:00:00&#43;08:00">
+        
+  
+  
+  
+  
+    2023年05月12日 19:00:00
+  
+
+      </time>
+    
+    
+  
+  
+    <span>分類</span>
+    
+      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        安裝Nginx #更新套件清單 sudo apt update #安裝nginx apt install nginx 設定檔Config 路徑：./etc/nginx/conf.d 一個子網域建立一個conf檔案（方便管理），後續執行Let&rsquo;s Encrypt的時候，也會根據子網域，將相關的項目寫到對應的檔案內，例如：子網域為blog.○○○.com，則新增檔案blog.conf。
+操作指令 #查看目前nginx狀態 systemctl status nginx #啟動nginx systemctl start nginx #重啟nginx systemctl restart nginx Let&rsquo;s Encrypt，設定https 前置工作 需要先有購買一個DNS，並且設定好子網域網址，例如：目前要設定的https的網址為https://dev.○○○.com ，就需要先設定好這個網域。
+指令 # 安裝相關套件 sudo apt install python3-certbot-nginx #　設定使用https的網域，例如下指令設定三個網域、子網域 sudo certbot --nginx -d xxx.com -d my.xxx.com -d blog.xxx.com 參考資料 Let&rsquo;s Encrypt官網
+      
+      <p>
+        
+          <a href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-nginx%E5%9F%BA%E6%9C%AC%E8%A8%AD%E5%AE%9A%E7%AD%86%E8%A8%98/" class="postShorten-excerpt_link link" aria-label="開啟文章: [自架伺服器] Nginx基本設定筆記">繼續閱讀</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+            
+              
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
         <a class="link-unstyled" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" aria-label="開啟文章: [自架伺服器] N秒後自動轉頁至○○○">
       
           [自架伺服器] N秒後自動轉頁至○○○
@@ -503,72 +570,24 @@ if (!doNotTrack) {
 </article>
 
             
-              
-  
-    
+            
+  <div class="pagination-bar">
+    <ul class="pagination">
       
         
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title">
-      
-        <a class="link-unstyled" href="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" aria-label="開啟文章: [自架伺服器] MP510-50 楓葉板">
-      
-          [自架伺服器] MP510-50 楓葉板
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time datetime="2022-04-11T15:36:14&#43;08:00">
         
-  
-  
-  
-  
-    2022年04月11日 15:36:14
-  
-
-      </time>
-    
-    
-  
-  
-    <span>分類</span>
-    
-      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
-    
-  
-
+          <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="https://chihpindu.github.io/categories/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8/page/2/" aria-label="下一頁">
+              <span>下一頁</span>
+              <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+          </li>
+        
+      
+      <li class="pagination-number">第 1 頁 共 2 頁</li>
+    </ul>
   </div>
 
-    </div>
-    <div class="postShorten-excerpt">
-      
-        <p>一直以來都想要自己架一個屬於自己的伺服器，放上自己的程式作品，跑一些排程工作，亦或是爬蟲&hellip;</p>
-      
-      <p>
-        
-          <a href="https://chihpindu.github.io/2022/04/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-mp510-50-%E6%A5%93%E8%91%89%E6%9D%BF/" class="postShorten-excerpt_link link" aria-label="開啟文章: [自架伺服器] MP510-50 楓葉板">繼續閱讀</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-            
-            
 
           </section>
         
