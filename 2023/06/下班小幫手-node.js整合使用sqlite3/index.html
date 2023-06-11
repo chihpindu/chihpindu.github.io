@@ -7,10 +7,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "[自架伺服器] N秒後自動轉頁至○○○",
+  "headline": "[下班小幫手] Node.js整合使用Sqlite3",
   
-  "datePublished": "2023-05-11T18:29:08+08:00",
-  "dateModified": "2023-05-11T18:29:08+08:00",
+  "datePublished": "2023-06-11T23:19:00+08:00",
+  "dateModified": "2023-06-11T23:19:00+08:00",
   "author": {
     "@type": "Person",
     "name": "貓咖啡工作室",
@@ -20,7 +20,7 @@
   },
   "mainEntityOfPage": { 
     "@type": "WebPage",
-    "@id": "https:\/\/chihpindu.github.io\/2023\/05\/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3\/" 
+    "@id": "https:\/\/chihpindu.github.io\/2023\/06\/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3\/" 
   },
   "publisher": {
     "@type": "Organization",
@@ -32,7 +32,7 @@
     }
     
   },
-  "description": "日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。\n",
+  "description": "大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…\n",
   "keywords": []
 }
 
@@ -43,39 +43,43 @@
 <meta name="generator" content="Hugo 0.113.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
+<meta name="description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
 
 
-<meta property="og:description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
+<meta property="og:description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[自架伺服器] N秒後自動轉頁至○○○">
-<meta name="twitter:title" content="[自架伺服器] N秒後自動轉頁至○○○">
-<meta property="og:url" content="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/">
-<meta property="twitter:url" content="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/">
+<meta property="og:title" content="[下班小幫手] Node.js整合使用Sqlite3">
+<meta name="twitter:title" content="[下班小幫手] Node.js整合使用Sqlite3">
+<meta property="og:url" content="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
-<meta name="twitter:description" content="日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。">
+<meta property="og:description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
+<meta name="twitter:description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
 <meta property="og:locale" content="zh-tw">
 
   
-    <meta property="article:published_time" content="2023-05-11T18:29:08">
+    <meta property="article:published_time" content="2023-06-11T23:19:00">
   
   
-    <meta property="article:modified_time" content="2023-05-11T18:29:08">
+    <meta property="article:modified_time" content="2023-06-11T23:19:00">
   
   
   
     
-      <meta property="article:section" content="自架伺服器">
+      <meta property="article:section" content="下班小幫手">
     
   
   
     
       <meta property="article:tag" content="貓咖啡工作室">
     
-      <meta property="article:tag" content="Linux">
+      <meta property="article:tag" content="下班小幫手">
     
-      <meta property="article:tag" content="Nginx">
+      <meta property="article:tag" content="nodejs">
+    
+      <meta property="article:tag" content="electronjs">
+    
+      <meta property="article:tag" content="sqlite">
     
   
 
@@ -96,14 +100,14 @@
 
 
 
-    <title>[自架伺服器] N秒後自動轉頁至○○○</title>
+    <title>[下班小幫手] Node.js整合使用Sqlite3</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/">
+    <link rel="canonical" href="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -278,19 +282,19 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      [自架伺服器] N秒後自動轉頁至○○○
+      [下班小幫手] Node.js整合使用Sqlite3
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2023-05-11T18:29:08&#43;08:00">
+      <time datetime="2023-06-11T23:19:00&#43;08:00">
         
   
   
   
   
-    2023年05月11日 18:29:08
+    2023年06月11日 23:19:00
   
 
       </time>
@@ -300,7 +304,7 @@ if (!doNotTrack) {
   
     <span>分類</span>
     
-      <a class="category-link" href="https://chihpindu.github.io/categories/%e8%87%aa%e6%9e%b6%e4%bc%ba%e6%9c%8d%e5%99%a8">自架伺服器</a>
+      <a class="category-link" href="https://chihpindu.github.io/categories/%e4%b8%8b%e7%8f%ad%e5%b0%8f%e5%b9%ab%e6%89%8b">下班小幫手</a>
     
   
 
@@ -310,46 +314,71 @@ if (!doNotTrack) {
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>日前在設定Nginx的時候，有想到一個狀況，是不是能在發生特定異常，例如：502或是404的時候，一律轉頁到首頁，原本的想法是直接在Nginx上設定，但是突然想到有看過別的網站，會提供一個頁面，顯示N秒後轉頁，就決定用這個方式來實作。</p>
-<p>剛有這個想法到實際產出這個html頁，大約是5分鐘，因為我把這個工作「外包」給ChatGPT（免費版本），簡單的發問：「寫一個HTML N秒後轉頁」，不到10秒的時間，AI就把頁面寫好了，我只要簡單的調整一下內容，修改樣式，就可以直接上線。</p>
-<p>使用ChatGPT大約一個禮拜左右，就我目前使用的狀況，以及AI回應的內容，我認為還不致於完全取代掉程式設計師，也可能是我目前使用的是免費版本，說不定付費版本又更加強大。</p>
-<p>雖然寫程式的部份很厲害，不過目前仍是一個指令一個動作，可以很容易的寫出一個小程式，不過更複雜，需要大量整合，很多規則的系統，仍然是需要工程師來整合處理，況且目前寫出來的程式也不是百分百可以直接執行，還是需要人為介入來處理問題，不過就我這篇文章需求來說，AI確實是可以很快速的協助工程師完成工作。</p>
-<p>如圖，AI寫的程式：
-<img src="https://hackmd.io/_uploads/SklCkt9En.png" alt="AI寫程式"></p>
-<p>簡單調整後的程式：</p>
-<pre tabindex="0"><code class="language-htmlembedded!=" data-lang="htmlembedded!=">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;5秒後自動轉址...&lt;/title&gt;
-	&lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1, user-scalable=no&#34; /&gt;
-  &lt;/head&gt;
-  &lt;style&gt;
-	body {
-		padding: 5% 20%;
-		text-align: center;
-		font-size: 2em;
-	}
-  &lt;/style&gt;
-  &lt;body&gt;
-    &lt;p&gt;將在&lt;span id=&#34;countdown&#34;&gt;5&lt;/span&gt;秒後，自動轉址至 &lt;a href=&#34;https://chihpindu.com&#34;&gt;貓咖啡工作室&lt;/a&gt;&lt;/p&gt;
-	&lt;p&gt;或是點擊 &lt;a href=&#34;https://chihpindu.com&#34;&gt;https://chihpindu.com&lt;/a&gt; 立即前往 &lt;/p&gt;
-    &lt;script&gt;
-      var seconds = 5;
-      setInterval(function() {
-        seconds--;
-		if(seconds &gt;= 0){
-			document.getElementById(&#34;countdown&#34;).textContent = seconds;
-		}
-		
-        if (seconds == 0) {
-          window.location.href = &#34;https://chihpindu.com&#34;;
-        }
-      }, 1000);
-    &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>執行結果如下：
-<img src="https://hackmd.io/_uploads/B1GFxBqEn.png" alt="N秒後自動轉址結果"></p>
+              <p>大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…</p>
+<p>說到資料庫，大部份的人都會想到MySQL、MS SQL Server、PostgreSQL、mongodb，不過對於實作一個小程式來說，使用上述的資料庫有點大材小用，我的需求是能使用SQL作簡單的資料新增、修改、刪除及條件查詢，初期只會有兩個資料表（存記錄、存設定），所以Sqlite就是一個很好的選擇。</p>
+<p>想知道最新消息、版本資訊，亦或是說明文件，可以進入
+<a href="https://www.sqlite.org/index.html">Sqlite官網</a>
+查看，下面就直接進入 <strong>下班小幫手</strong> ，如何使用node去操作Sqlite。</p>
+<p>關於程式的撰寫，不知道有多少人會根據功能寫獨立的模組，或是全部都寫在main.js就好？
+這個部份，就我看過的書來說，很多都不會特別讓程式「獨立」一個檔案（模組），一股腦的全部寫在一個檔案（例如：main.js、index.js），所以在Side Project時候就會去想是不是需要獨立模組js出來，要如何分出來，檔案資料庫結構應該如何，參考github上的範例，好像也找不出什麼規則，後來的結論是…以自己看的懂的結構就可以XD。</p>
+<h3 id="安裝sqlite3">安裝Sqlite3</h3>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">npm install sqlite3 --save
+</code></pre><h3 id="初始化資料庫">初始化資料庫</h3>
+<p>建立*.db檔，並判斷是否存在資料表，不存在資料表，則立即新增。
+新增資料表的時候使用「db.run」，</p>
+<ul>
+<li>參數1為欲執行的SQL</li>
+<li>參數2為參數1要代入的常式</li>
+<li>參數3為執行的callback，此callback不會回應執行的結果，例如參數1為SELECT，callback不會回應搜尋的結果，callback只會回應是否有錯誤，當執行有錯誤，第一參數會是錯誤的資訊；如果沒有錯誤，則為null。</li>
+</ul>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">//載入，並取得sqlite3的物件
+const sqlite3 = require(&#39;sqlite3&#39;).verbose();
+
+//建立資料庫檔案（*.db），如果已存在db檔案，則不再次新增，直接取用原db檔。
+let db = new sqlite3.Database(&#39;loginLog.db&#39;, (err) =&gt; {
+    if (err) {
+        //發生錯誤，顯示錯誤訊息。
+        console.error(err.message);
+    }    
+
+    //判斷是否已存在資料表WorkLog，如果不存在則建立。
+    //ID：數字型態，自動設值的欄位，1、2、3…。
+    //LogTime：字串型態，紀錄上、下班時間。
+    //Type: 數字型態，定義為 0-無狀態、1-上班、2-下班。預設值為0。
+    db.run(`
+        CREATE TABLE IF NOT EXISTS WorkLog (
+            ID INTEGER PRIMARY KEY,
+            LogTime TEXT,
+            Type INTEGER DEFAULT 0
+        );
+    `);
+    
+    //建立Setting資料表，程式略…
+});
+</code></pre><h3 id="搜尋紀錄">搜尋紀錄</h3>
+<p>因為db.run不會回應SQL執行的內容，所以在搜尋記錄的部分會使用另一個方法「db.all」來取得打卡記錄。</p>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">let strSQL = `SELECT FROM WorkLog WHERE LogTime BETWEEN ${StartDateTime} AND ${EndDateTime}`;
+
+db.all(strSQL, [], (err, rows){
+    //回應符合條件的打卡紀錄       
+});
+</code></pre><h3 id="新增紀錄">新增紀錄</h3>
+<p>因為新增記錄，只需要知道新增是否成功，所以此處可以使用db.run，再根據callback的第一個參數了解是否執行成功。</p>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">let now = new Date(); //目前時間。
+let type = 1;         //表示上班。
+db.run(`INSERT INTO WorkLog(LogTime, Type) VALUES(?,?)`, [now, type], (err)=&gt;{
+    //如果執行有錯誤，err即為錯誤資訊。
+    //如果新增成功，則err為null。
+};
+</code></pre><h3 id="其他執行的方法">其他執行的方法</h3>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">//db.get，取得資料，只會回應符合條件的第一筆資料。例如：
+db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
+    //如果執行有誤，err為錯誤訊息/原因；如果無誤，則為null
+    //row，為符合搜尋的第一筆資料；如果沒有回應資料，則為undefined
+});
+</code></pre><p>由上述內容應該就可以知道當需要更新、刪除記錄的時候，應該使用什麼方法執行了。</p>
+<p>更新一筆記錄（或是之後會加入實作的更新設定值），使用db.run，因為執行更新的時候只需要知道執行是否成功，不會有回應資訊。</p>
+<p>同樣地，刪除一筆記錄的一樣也是使用db.run，只需要知道執行是否成功即可</p>
               
 
 
@@ -366,11 +395,19 @@ if (!doNotTrack) {
 
 
 
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/linux/">Linux</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B/">下班小幫手</a>
 
 
 
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/nginx/">Nginx</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/nodejs/">nodejs</a>
+
+
+
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/electronjs/">electronjs</a>
+
+
+
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/sqlite/">sqlite</a>
 
 
 
@@ -385,7 +422,7 @@ if (!doNotTrack) {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-nginx%E5%9F%BA%E6%9C%AC%E8%A8%AD%E5%AE%9A%E7%AD%86%E8%A8%98/" data-tooltip="[自架伺服器] Nginx基本設定筆記" aria-label="下一篇: [自架伺服器] Nginx基本設定筆記">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -393,7 +430,7 @@ if (!doNotTrack) {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" data-tooltip="[Hugo] 自定義Hugo的Tags顯示" aria-label="上一篇: [Hugo] 自定義Hugo的Tags顯示">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-%E5%88%9D%E7%89%88%E7%A8%8B%E5%BC%8F%E5%AE%8C%E6%88%90/" data-tooltip="[下班小幫手] 初版程式完成" aria-label="上一篇: [下班小幫手] 初版程式完成">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -411,13 +448,13 @@ if (!doNotTrack) {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -456,7 +493,7 @@ if (!doNotTrack) {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-nginx%E5%9F%BA%E6%9C%AC%E8%A8%AD%E5%AE%9A%E7%AD%86%E8%A8%98/" data-tooltip="[自架伺服器] Nginx基本設定筆記" aria-label="下一篇: [自架伺服器] Nginx基本設定筆記">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -464,7 +501,7 @@ if (!doNotTrack) {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/hugo-%E8%87%AA%E5%AE%9A%E7%BE%A9hugo%E7%9A%84tags%E9%A1%AF%E7%A4%BA/" data-tooltip="[Hugo] 自定義Hugo的Tags顯示" aria-label="上一篇: [Hugo] 自定義Hugo的Tags顯示">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-%E5%88%9D%E7%89%88%E7%A8%8B%E5%BC%8F%E5%AE%8C%E6%88%90/" data-tooltip="[下班小幫手] 初版程式完成" aria-label="上一篇: [下班小幫手] 初版程式完成">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -482,13 +519,13 @@ if (!doNotTrack) {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/05/%E8%87%AA%E6%9E%B6%E4%BC%BA%E6%9C%8D%E5%99%A8-n%E7%A7%92%E5%BE%8C%E8%87%AA%E5%8B%95%E8%BD%89%E9%A0%81%E8%87%B3/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -513,13 +550,13 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-n%25E7%25A7%2592%25E5%25BE%258C%25E8%2587%25AA%25E5%258B%2595%25E8%25BD%2589%25E9%25A0%2581%25E8%2587%25B3%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F06%2F%25E4%25B8%258B%25E7%258F%25AD%25E5%25B0%258F%25E5%25B9%25AB%25E6%2589%258B-node.js%25E6%2595%25B4%25E5%2590%2588%25E4%25BD%25BF%25E7%2594%25A8sqlite3%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F05%2F%25E8%2587%25AA%25E6%259E%25B6%25E4%25BC%25BA%25E6%259C%258D%25E5%2599%25A8-n%25E7%25A7%2592%25E5%25BE%258C%25E8%2587%25AA%25E5%258B%2595%25E8%25BD%2589%25E9%25A0%2581%25E8%2587%25B3%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F06%2F%25E4%25B8%258B%25E7%258F%25AD%25E5%25B0%258F%25E5%25B9%25AB%25E6%2589%258B-node.js%25E6%2595%25B4%25E5%2590%2588%25E4%25BD%25BF%25E7%2594%25A8sqlite3%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>
