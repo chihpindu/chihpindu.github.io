@@ -7,10 +7,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "[下班小幫手] Node.js整合使用Sqlite3",
+  "headline": "[Github] SSH and GPG Keys如何設置",
   
-  "datePublished": "2023-06-11T23:19:00+08:00",
-  "dateModified": "2023-06-11T23:19:00+08:00",
+  "datePublished": "2023-09-22T23:31:00+08:00",
+  "dateModified": "2023-09-22T23:31:00+08:00",
   "author": {
     "@type": "Person",
     "name": "貓咖啡工作室",
@@ -20,7 +20,7 @@
   },
   "mainEntityOfPage": { 
     "@type": "WebPage",
-    "@id": "https:\/\/chihpindu.github.io\/2023\/06\/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3\/" 
+    "@id": "https:\/\/chihpindu.github.io\/2023\/09\/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE\/" 
   },
   "publisher": {
     "@type": "Organization",
@@ -32,7 +32,7 @@
     }
     
   },
-  "description": "大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…\n",
+  "description": "每次在一台新裝置上要git clone ○○○自己的private專案，總是會出現授權問題，就會想到是忘了設定ssh keys\n",
   "keywords": []
 }
 
@@ -43,43 +43,37 @@
 <meta name="generator" content="Hugo 0.118.2 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="貓咖啡工作室">
 <meta name="keywords" content="">
-<meta name="description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
+<meta name="description" content="每次在一台新裝置上要git clone ○○○自己的private專案，總是會出現授權問題，就會想到是忘了設定ssh keys">
 
 
-<meta property="og:description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
+<meta property="og:description" content="每次在一台新裝置上要git clone ○○○自己的private專案，總是會出現授權問題，就會想到是忘了設定ssh keys">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[下班小幫手] Node.js整合使用Sqlite3">
-<meta name="twitter:title" content="[下班小幫手] Node.js整合使用Sqlite3">
-<meta property="og:url" content="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/">
-<meta property="twitter:url" content="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/">
+<meta property="og:title" content="[Github] SSH and GPG Keys如何設置">
+<meta name="twitter:title" content="[Github] SSH and GPG Keys如何設置">
+<meta property="og:url" content="https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/">
+<meta property="twitter:url" content="https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/">
 <meta property="og:site_name" content="貓咖啡工作室">
-<meta property="og:description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
-<meta name="twitter:description" content="大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…">
+<meta property="og:description" content="每次在一台新裝置上要git clone ○○○自己的private專案，總是會出現授權問題，就會想到是忘了設定ssh keys">
+<meta name="twitter:description" content="每次在一台新裝置上要git clone ○○○自己的private專案，總是會出現授權問題，就會想到是忘了設定ssh keys">
 <meta property="og:locale" content="zh-tw">
 
   
-    <meta property="article:published_time" content="2023-06-11T23:19:00">
+    <meta property="article:published_time" content="2023-09-22T23:31:00">
   
   
-    <meta property="article:modified_time" content="2023-06-11T23:19:00">
+    <meta property="article:modified_time" content="2023-09-22T23:31:00">
   
   
-  
-    
-      <meta property="article:section" content="下班小幫手">
-    
   
   
     
       <meta property="article:tag" content="貓咖啡工作室">
     
-      <meta property="article:tag" content="下班小幫手">
+      <meta property="article:tag" content="ssh keys">
     
-      <meta property="article:tag" content="nodejs">
+      <meta property="article:tag" content="git">
     
-      <meta property="article:tag" content="electronjs">
-    
-      <meta property="article:tag" content="sqlite">
+      <meta property="article:tag" content="Github">
     
   
 
@@ -100,14 +94,14 @@
 
 
 
-    <title>[下班小幫手] Node.js整合使用Sqlite3</title>
+    <title>[Github] SSH and GPG Keys如何設置</title>
 
     <link rel="icon" href="https://chihpindu.github.io/logo/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/">
+    <link rel="canonical" href="https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -282,103 +276,42 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      [下班小幫手] Node.js整合使用Sqlite3
+      [Github] SSH and GPG Keys如何設置
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2023-06-11T23:19:00&#43;08:00">
+      <time datetime="2023-09-22T23:31:00&#43;08:00">
         
   
   
   
   
-    2023年06月11日 23:19:00
+    2023年09月22日 23:31:00
   
 
       </time>
     
     
-  
-  
-    <span>分類</span>
-    
-      <a class="category-link" href="https://chihpindu.github.io/categories/%e4%b8%8b%e7%8f%ad%e5%b0%8f%e5%b9%ab%e6%89%8b">下班小幫手</a>
-    
-  
-
   </div>
 
 </div>
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>大部份的程式都會做資料記錄，而儲存紀錄的方式很多，由最簡單的文字檔txt、JSON、XML…等，都可以把資料紀錄在獨立一個檔案，也可以考慮使用sqlite，可以使用SQL語法來建立、更新、刪除資料，我認為這是一個很好的選擇…</p>
-<p>說到資料庫，大部份的人都會想到MySQL、MS SQL Server、PostgreSQL、mongodb，不過對於實作一個小程式來說，使用上述的資料庫有點大材小用，我的需求是能使用SQL作簡單的資料新增、修改、刪除及條件查詢，初期只會有兩個資料表（存記錄、存設定），所以Sqlite就是一個很好的選擇。</p>
-<p>想知道最新消息、版本資訊，亦或是說明文件，可以進入
-<a href="https://www.sqlite.org/index.html">Sqlite官網</a>
-查看，下面就直接進入 <strong>下班小幫手</strong> ，如何使用node去操作Sqlite。</p>
-<p>關於程式的撰寫，不知道有多少人會根據功能寫獨立的模組，或是全部都寫在main.js就好？
-這個部份，就我看過的書來說，很多都不會特別讓程式「獨立」一個檔案（模組），一股腦的全部寫在一個檔案（例如：main.js、index.js），所以在Side Project時候就會去想是不是需要獨立模組js出來，要如何分出來，檔案資料庫結構應該如何，參考github上的範例，好像也找不出什麼規則，後來的結論是…以自己看的懂的結構就可以XD。</p>
-<h3 id="安裝sqlite3">安裝Sqlite3</h3>
-<pre tabindex="0"><code class="language-bash=" data-lang="bash=">npm install sqlite3 --save
-</code></pre><h3 id="初始化資料庫">初始化資料庫</h3>
-<p>建立*.db檔，並判斷是否存在資料表，不存在資料表，則立即新增。
-新增資料表的時候使用「db.run」，</p>
-<ul>
-<li>參數1為欲執行的SQL</li>
-<li>參數2為參數1要代入的常式</li>
-<li>參數3為執行的callback，此callback不會回應執行的結果，例如參數1為SELECT，callback不會回應搜尋的結果，callback只會回應是否有錯誤，當執行有錯誤，第一參數會是錯誤的資訊；如果沒有錯誤，則為null。</li>
-</ul>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">//載入，並取得sqlite3的物件
-const sqlite3 = require(&#39;sqlite3&#39;).verbose();
-
-//建立資料庫檔案（*.db），如果已存在db檔案，則不再次新增，直接取用原db檔。
-let db = new sqlite3.Database(&#39;loginLog.db&#39;, (err) =&gt; {
-    if (err) {
-        //發生錯誤，顯示錯誤訊息。
-        console.error(err.message);
-    }    
-
-    //判斷是否已存在資料表WorkLog，如果不存在則建立。
-    //ID：數字型態，自動設值的欄位，1、2、3…。
-    //LogTime：字串型態，紀錄上、下班時間。
-    //Type: 數字型態，定義為 0-無狀態、1-上班、2-下班。預設值為0。
-    db.run(`
-        CREATE TABLE IF NOT EXISTS WorkLog (
-            ID INTEGER PRIMARY KEY,
-            LogTime TEXT,
-            Type INTEGER DEFAULT 0
-        );
-    `);
-    
-    //建立Setting資料表，程式略…
-});
-</code></pre><h3 id="搜尋紀錄">搜尋紀錄</h3>
-<p>因為db.run不會回應SQL執行的內容，所以在搜尋記錄的部分會使用另一個方法「db.all」來取得打卡記錄。</p>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">let strSQL = `SELECT FROM WorkLog WHERE LogTime BETWEEN ${StartDateTime} AND ${EndDateTime}`;
-
-db.all(strSQL, [], (err, rows){
-    //回應符合條件的打卡紀錄       
-});
-</code></pre><h3 id="新增紀錄">新增紀錄</h3>
-<p>因為新增記錄，只需要知道新增是否成功，所以此處可以使用db.run，再根據callback的第一個參數了解是否執行成功。</p>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">let now = new Date(); //目前時間。
-let type = 1;         //表示上班。
-db.run(`INSERT INTO WorkLog(LogTime, Type) VALUES(?,?)`, [now, type], (err)=&gt;{
-    //如果執行有錯誤，err即為錯誤資訊。
-    //如果新增成功，則err為null。
-};
-</code></pre><h3 id="其他執行的方法">其他執行的方法</h3>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">//db.get，取得資料，只會回應符合條件的第一筆資料。例如：
-db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
-    //如果執行有誤，err為錯誤訊息/原因；如果無誤，則為null
-    //row，為符合搜尋的第一筆資料；如果沒有回應資料，則為undefined
-});
-</code></pre><p>由上述內容應該就可以知道當需要更新、刪除記錄的時候，應該使用什麼方法執行了。</p>
-<p>更新一筆記錄（或是之後會加入實作的更新設定值），使用db.run，因為執行更新的時候只需要知道執行是否成功，不會有回應資訊。</p>
-<p>同樣地，刪除一筆記錄的一樣也是使用db.run，只需要知道執行是否成功即可</p>
+              <p>每次在一台新裝置上要git clone ○○○自己的private專案，總是會出現授權問題，就會想到是忘了設定ssh keys</p>
+<p>但是查閱github上的說明，總是一個頭兩個大，寫了很多的內容，結果還是不知道怎麼設定，後來找到解決方案，很簡單的執行兩個指令，就可以得到Authentication Keys</p>
+<h2 id="執行指令">執行指令</h2>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">#產生publich key
+ssh-keygen
+#進入目錄
+cd ~/.ssh
+#執行cat查看公鑰
+cat ~/.ssh/id_rsa.pub
+</code></pre><p>接下來，點擊New SSH Key，把產生的公鑰字串，輸入至Key欄位，點擊Add SSH Key，就完成了。
+<img src="https://hackmd.io/_uploads/r1b5r4iJa.png" alt=""></p>
+<p>這個時候就可以在裝置的ssh執行git clone ○○○下載Repo了。</p>
               
 
 
@@ -395,19 +328,15 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
 
 
 
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B/">下班小幫手</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/ssh-keys/">ssh keys</a>
 
 
 
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/nodejs/">nodejs</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/git/">git</a>
 
 
 
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/electronjs/">electronjs</a>
-
-
-
-  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/sqlite/">sqlite</a>
+  <a class="tag tag--primary tag--small" href="https://chihpindu.github.io/tags/github/">Github</a>
 
 
 
@@ -422,7 +351,7 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/" data-tooltip="[Github] SSH and GPG Keys如何設置" aria-label="下一篇: [Github] SSH and GPG Keys如何設置">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -430,7 +359,7 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-%E5%88%9D%E7%89%88%E7%A8%8B%E5%BC%8F%E5%AE%8C%E6%88%90/" data-tooltip="[下班小幫手] 初版程式完成" aria-label="上一篇: [下班小幫手] 初版程式完成">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" data-tooltip="[下班小幫手] Node.js整合使用Sqlite3" aria-label="上一篇: [下班小幫手] Node.js整合使用Sqlite3">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -448,13 +377,13 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -493,7 +422,7 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/" data-tooltip="[Github] SSH and GPG Keys如何設置" aria-label="下一篇: [Github] SSH and GPG Keys如何設置">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -501,7 +430,7 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/05/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-%E5%88%9D%E7%89%88%E7%A8%8B%E5%BC%8F%E5%AE%8C%E6%88%90/" data-tooltip="[下班小幫手] 初版程式完成" aria-label="上一篇: [下班小幫手] 初版程式完成">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" data-tooltip="[下班小幫手] Node.js整合使用Sqlite3" aria-label="上一篇: [下班小幫手] Node.js整合使用Sqlite3">
           
               <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
               <i class="fa fa-angle-right"></i>
@@ -519,13 +448,13 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Facebook" aria-label="分享到 Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/" title="分享到 Facebook" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/06/%E4%B8%8B%E7%8F%AD%E5%B0%8F%E5%B9%AB%E6%89%8B-node.js%E6%95%B4%E5%90%88%E4%BD%BF%E7%94%A8sqlite3/" title="分享到 Twitter" aria-label="分享到 Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://chihpindu.github.io/2023/09/github-ssh-and-gpg-keys%E5%A6%82%E4%BD%95%E8%A8%AD%E7%BD%AE/" title="分享到 Twitter" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -550,13 +479,13 @@ db.get(`SELECT * FROM WorkLog ORDER BY LogTime DESC`, [], (err, row){
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F06%2F%25E4%25B8%258B%25E7%258F%25AD%25E5%25B0%258F%25E5%25B9%25AB%25E6%2589%258B-node.js%25E6%2595%25B4%25E5%2590%2588%25E4%25BD%25BF%25E7%2594%25A8sqlite3%2F" aria-label="分享到 Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fchihpindu.github.io%2F2023%2F09%2Fgithub-ssh-and-gpg-keys%25E5%25A6%2582%25E4%25BD%2595%25E8%25A8%25AD%25E7%25BD%25AE%2F" aria-label="分享到 Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F06%2F%25E4%25B8%258B%25E7%258F%25AD%25E5%25B0%258F%25E5%25B9%25AB%25E6%2589%258B-node.js%25E6%2595%25B4%25E5%2590%2588%25E4%25BD%25BF%25E7%2594%25A8sqlite3%2F" aria-label="分享到 Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fchihpindu.github.io%2F2023%2F09%2Fgithub-ssh-and-gpg-keys%25E5%25A6%2582%25E4%25BD%2595%25E8%25A8%25AD%25E7%25BD%25AE%2F" aria-label="分享到 Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
         </a>
       </li>
