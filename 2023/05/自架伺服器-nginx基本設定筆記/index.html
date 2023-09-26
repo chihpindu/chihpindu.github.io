@@ -317,9 +317,56 @@ sudo apt update
 
 #安裝nginx
 apt install nginx
-</code></pre><h2 id="設定檔config">設定檔Config</h2>
+</code></pre><h2 id="設定檔config子網域設定">設定檔Config，子網域設定</h2>
 <p>路徑：./etc/nginx/conf.d
-一個子網域建立一個conf檔案（方便管理），後續執行Let&rsquo;s Encrypt的時候，也會根據子網域，將相關的項目寫到對應的檔案內，例如：子網域為<code>blog.○○○.com</code>，則新增檔案blog.conf。</p>
+一個子網域就用一個conf檔案（方便管理），後續執行Let&rsquo;s Encrypt的時候，也會根據子網域，將相關的項目寫到對應的檔案內，例如：子網域為<code>blog.○○○.com</code>，則新增檔案blog.conf。</p>
+<p>這個部份日前在重整伺服器的時候，發現一直無法設定成功，經過一此測試已排除，如下操作步驟：</p>
+<ol>
+<li>建立子網域專屬檔案</li>
+</ol>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">#進入設定檔資料夾
+cd /etc/nginx/conf.d
+#新增設定檔
+sudo touch 子網域.conf
+#進入設定檔
+vim 子網域.conf
+</code></pre><ol start="2">
+<li>建立基本設定</li>
+</ol>
+<p>如果只是想要建立一個基本讀取靜態網頁的功能，可以如下設定：</p>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">server {
+    server_name ○○○.com
+    root /var/www/html;
+    
+    location / {
+        root /var/www/html;
+        index index.html;
+    }
+}
+</code></pre><p>如果想要利用反向代理到特定port（例如執行ExpressJs、ReactJs專案），可以如下設定：</p>
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">server{
+    server_name ○○○.com;
+    
+    location / {
+        #設定反向代理到3000 prot
+        proxy_pass http://localhost:3000;
+        
+        #把 IP、Protocol 等 header 都一起送給反向代理的 server
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto;
+    }
+}
+</code></pre><ol start="3">
+<li>
+<p>啟用nginx，確認步驟2的設定無誤
+如果步驟2設定有錯誤，nginx就會無法啟動（重新啟動），可以根據錯誤訊息查看設定檔錯誤訊息，執行下述「操作指令」，重新啟動nginx。</p>
+</li>
+<li>
+<p>建立https
+執行下述「Let&rsquo;s Encrypt，設定https」指令，如果設置沒有錯誤的話，會自動在步驟2所建立的○.conf內自動加入https所需的設置。</p>
+</li>
+</ol>
 <h2 id="操作指令">操作指令</h2>
 <pre tabindex="0"><code class="language-bash=" data-lang="bash=">#查看目前nginx狀態
 systemctl status nginx
@@ -331,7 +378,10 @@ systemctl start nginx
 systemctl restart nginx
 </code></pre><h2 id="lets-encrypt設定https">Let&rsquo;s Encrypt，設定https</h2>
 <h3 id="前置工作">前置工作</h3>
-<p>需要先有購買一個DNS，並且設定好子網域網址，例如：目前要設定的https的網址為https://dev.○○○.com ，就需要先設定好這個網域。</p>
+<p>需要先有購買一個DNS，並且設定好子網域網址，例如：目前要設定的https的網址為https://blog.○○○.com ，就需要先設定好這個網域。</p>
+<blockquote>
+<p>網域購買可以參考：Google Domains、GoDaddy、TaiwanDNS…等，</p>
+</blockquote>
 <h3 id="指令">指令</h3>
 <pre tabindex="0"><code class="language-bash=" data-lang="bash="># 安裝相關套件
 sudo apt install python3-certbot-nginx
